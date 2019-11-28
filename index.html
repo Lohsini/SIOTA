@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 可以伸縮的功能 ios9也能用-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- 什麼版本IE 就用什麼版本的標準模式 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 以下兩句一模一樣(?) -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <!-- tab名字 -->
+  <title>Document</title>
+  <!-- 以下是bootstrap來源 只有css部分 js jQ再上網取-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- 以下是css來源 -->
+  <link href="./css/main.css" rel="stylesheet">
+  <!-- 以下是字型來源   -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+  <!-- 以下是icon來源 -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div class="top_nav">
+    <div class="container">
+      <div class="top_nav_left">
+        <div class="call_us">
+          <i class="fas fa-phone-square"></i>
+          <span>(03)571-5131 # 80078</span>
+        </div>
+        <div class="mail_us">
+          <i class="fas fa-envelope-square"></i>
+          <span>E-mail: lpwan@cs.nthu.edu.tw</span>
+        </div>
+      </div>
+      <div class="top_nav_right">
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="google">
+          <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html"><img src="main_logo.png" alt="logo"></a>
+      </div>
+      <div class="navbar">
+        <input type="checkbox" name="open" id="rwdbtn">
+        <label class="open_btn" for="rwdbtn"><i class="fas fa-ellipsis-h"></i></label>
+        <ul class="innavbar">
+
+          <div class="subnav">
+            <button class="subnavbtn">
+              <a href="./index.html">
+                <span class="activepage">首頁</span><br>
+                <span class="en">home</span></a></button>
+            <div class="subnav-content">
+              <a href="#target">研究目標</a>
+              <a href="#status">研究現況</a>
+              <a href="#plan">執行計畫表</a>
+              <a href="#strategy">策略方法</a>
+            </div>
+          </div>
+
+          <a href="./2second/news.html">
+            <span>新聞報導</span><br>
+            <span class="en">news</span></a>
+
+          <a href="./2second/activity.html">
+            <span>活動</span><br>
+            <span class="en">activity</span></a>
+
+          <div class="subnav">
+            <button class="subnavbtn">
+              <a href="./2second/about.html">
+                <span>關於</span><br>
+                <span class="en">about</span></a></button>
+            <div class="subnav-content">
+              <a href="./2second/about.html">研究中心簡介</a>
+              <a href="./2second/about.html">計畫成員</a>
+            </div>
+          </div>
+
+          <div class="subnav">
+            <button class="subnavbtn">
+              <a href="./2second/member.html">
+                <span>成員</span><br>
+                <span class="en">member</span></a></button>
+            <div class="subnav-content">
+              <a href="#">111</a>
+              <a href="#">222</a>
+              <a href="#">333</a>
+              <a href="#">444</a>
+            </div>
+          </div>
+
+          <div class="subnav">
+            <button class="subnavbtn">
+              <a href="./2second/join.html">
+                <span>加入</span><br>
+                <span class="en">join</span></a></button>
+            <div class="subnav-content">
+              <a href="#link1">Link 1</a>
+              <a href="#link2">Link 2</a>
+              <a href="#link3">Link 3</a>
+              <a href="#link4">Link 4</a>
+            </div>
+          </div>
+
+          <a href="./2second/contact.html">
+            <span>聯絡我們</span><br>
+            <span class="en">contact us</span></a>
+
+          <label for="rwdbtn" class="close_btn"><i class="fas fa-times"></i></label>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="slideshow">
+    <div class="picture">
+      <div class="mySlides fade_a">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img1.jpg">
+        <div class="text">薯條</div>
+      </div>
+
+      <div class="mySlides fade_a">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img2.jpg">
+        <div class="text">拍照</div>
+      </div>
+
+      <div class="mySlides fade_a">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img3.jpg">
+        <div class="text">粉紅色</div>
+      </div>
+
+      <a class="prev" style="color: white;" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" style="color: white;" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot_group">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+
+
+
+  <div class="topic contentbox">
+    <div class="container">
+      <h2 class="title">國立清華大學 電機資訊學院
+        <br>智慧物聯網與科技藝術應用研究中心</h2>
+      <p>由清華大學電資學院、藝術學院組成的跨領域之研究中心「智慧物聯網與科技藝術應用研究中心」(Smart IoT and TechArt Applied Research Center，簡稱SIoTA)。</p>
+      <p>電資學院有研究實力堅強之智慧物聯網、人工智慧及大數據分析之研究團隊，扮演中心核心技術發展的角色；而藝術學院有豐富科技藝術與文創設計團隊，扮演讓科技與人文社會產生互動進而達到聚合性效應的角色。</p>
+      <p>本研究中心將專注在「物聯網智慧農業應用」、「智慧聯網技術」、「人工智慧大數據分析」、「科技藝術應用」四大研究領域，極具特色，將有助於推昇本院QS排名，社會回饋貢獻度以及提升產學合作成效。</p>
+      <div class="but">
+        <a href="./2second/about.html"><button type="button" name="button">瞭解更多</button></a>
+      </div>
+      <br>
+      <hr>
+    </div>
+  </div>
+
+
+  <div id="target" class="contentbox">
+    <div class="container">
+      <h2 class="title">研究目標</h2>
+      <p>希望能籌組一個建置與解決「i4SPACE-智慧創意生活空間」的智慧生活科技整合中心，充滿著智慧(intelligent)、無形(invisible)、資訊(informative)、互動(interactive)。</p>
+      <p>結合智慧科技與創新藝術，使得：</p>
+      <ul class="target_list">
+        <li>科技是以一種謙卑的姿態無形存在，並能隨時隨地提供資訊</li>
+        <li>生活空間充滿智慧與互動</li>
+        <li>所有數據導入城市社會，讓整個社會形成一個大的智慧城市實驗室</li>
+        <li>每個人成為智慧公民，並最終期盼促成創意人才育成及創意經濟之發展</li>
+      </ul>
+      <br>
+      <hr>
+    </div>
+  </div>
+
+
+  <div id="status" class="status contentbox">
+    <div class="container">
+      <h2 class="title">各領域研究現況</h2>
+      <div class="flex_box">
+        <div class="page page1">
+          <h4>物聯網智慧農業應用</h4>
+          <img class="status_pic" src="./111.jpg" alt="111">
+          <div class="point">
+            <p><strong>任務重點：</p>
+            <p>智慧農業與智慧城市。</strong></p>
+            <hr>
+            <p>「智慧農業」方面，如何依靠智慧科技尤其是人工智慧物聯網 (AIoT) 的技術來協助台灣甚至全球農業發展升級是刻不容緩的議題。</p><br>
+            <p>「智慧城市」方面，我們成員與光寶科技自 2017年起進行三件多年期智慧城市合作研究案。相信推動合作研究案過程中獲得的經驗，能提供台灣其他硬體廠商參考，促進資通產業轉型為軟體與服務提供者。</p>
+          </div>
+          <div class="but">
+            <button type="button" name="button">瞭解更多</button>
+          </div>
+        </div>
+
+        <div class="page page2">
+          <h4>智慧聯網技術</h4>
+          <img class="status_pic" src="./222.jpg" alt="222">
+          <div class="point">
+            <p><strong>任務重點：</p>
+            <p>開發前瞻網路通訊技術，並結合霧運算、系統控制以及動態網路佈建提供更具智慧與機動性的聯網技術。</strong></p>
+            <hr>
+            <p>本研究中心所考量之進階物聯網應用中，所收集到的資料需經由霧端或雲端人工智慧的運算後，即時地回傳控制訊號給物聯網進行裝置的操控。如此一來，分散於裝置、霧端、與雲端之各式資源，將通過異質網路充分整合，發揮最大的效益。</p>
+          </div>
+          <div class="but">
+            <button type="button" name="button">瞭解更多</button>
+          </div>
+        </div>
+        <div class="page page3">
+          <h4>人工智慧大數據分析</h4>
+          <img class="status_pic" src="./333.jpg" alt="333">
+          <div class="point">
+            <p><strong>任務重點：</p>
+            <p>將物聯網感測資訊、科技藝術呈現及智慧型產業應用利用人工智慧數據分析技術適切地串接及整合，以達到最佳之綜效。</strong></p>
+            <hr>
+            <p>綜合電腦視覺分析及物聯網所收集之環境資料大數據分析及農業專家之農作物栽培知識及經驗，發展基於人工智慧之農作物種植自動化及在地優化策略，以協助農民能夠大幅減少人力成本及增加產值。此技術的研發應用未來將可在臺灣農業自動化與優化帶來技術上的突破。</p>
+          </div>
+          <div class="but">
+            <button type="button" name="button">瞭解更多</button>
+          </div>
+        </div>
+        <div class="page page4">
+          <h4>科技藝術應用</h4>
+          <img class="status_pic" src="./444.jpeg" alt="444">
+          <div class="point">
+            <p><strong>任務重點：</p>
+            <p>扮演其他子團隊在科技的藝術創意加值應用。</strong></p>
+            <hr>
+            <p>過去多年來我們已投入科技藝術之數位文創研究與創作，研究範疇包括</p>
+            <p>(1) 長庚養身文化村銀髮智慧創意休憩空間建置</p>
+            <p>(2) 法鼓山創意禪修空間建置</p>
+            <p>(3) 北藝大無線感測人文樹道建置</p>
+            <p>(4) 花卉博覽會互動創意設計</p>
+            <p>(5) 解密科技寶藏文創館建置</p>
+            <p>(6) 2017世大運開幕與聖火台設計等</p>
+          </div>
+          <div class="but">
+            <button type="button" name="button">瞭解更多</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="activepage1" href="#page1">1</a>
+        <a href="#page2">2</a>
+        <a href="#page3">3</a>
+        <a href="#page4">4</a>
+        <a href="#">&raquo;</a>
+      </div> -->
+      <hr>
+    </div>
+  </div>
+
+  <div id="plan" class="plan contentbox">
+    <div class="container">
+      <h2 class="title">執行計畫</h2>
+      <p id="table_p">執行計畫預定之總體與分年目標（四年）</p>
+      <table>
+        <tr>
+          <th colspan="2" rowspan="2">質化目標</th>
+          <th>第1年</th>
+          <th>第2年</th>
+          <th>第3年</th>
+          <th>第4年</th>
+        </tr>
+        <tr>
+          <td>建立中心傑出團隊</td>
+          <td>建立傑出產學價值</td>
+          <td>建立傑出社會貢獻</td>
+          <td>QS排名提前10名</td>
+        </tr>
+        <tr>
+          <td rowspan="5">量化目標</td>
+          <td>前25% IF論文或旗艦型國際會議論文</td>
+          <td>10-12</td>
+          <td>12-15</td>
+          <td>15-18</td>
+          <td>18-22</td>
+        </tr>
+        <tr>
+          <td>專利</td>
+          <td>4</td>
+          <td>6</td>
+          <td>8</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>研討會受邀演講</td>
+          <td>12</td>
+          <td>12</td>
+          <td>15</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>延攬/培養年輕博士(生)</td>
+          <td>6</td>
+          <td>8</td>
+          <td>10</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>技轉、新創企業</td>
+          <td>3</td>
+          <td>6</td>
+          <td>9</td>
+          <td>12</td>
+        </tr>
+      </table> <br>
+      <hr>
+    </div>
+  </div>
+
+  <div id="strategy" class="strategy contentbox">
+    <div class="container">
+      <h2 class="title">達成策略</h2>
+      <div class="tabs">
+        <div class="tab_a">
+          <label for="one">1. 協助學術、社會或產業發展之策略規劃</label>
+          <input type="checkbox" name="is-tab" id="one">
+          <div class="content">
+            <p>聚焦於</p>
+            <p>(1) 頂級期刊與知名國際會議論文之發表。</p>
+            <p>(2) 國際級科技藝術創作及展演。</p>
+            <p>(3) 產學合作、創新創業。</p>
+            <p>(4) 跨國合作。</p>
+            <p>(5) 協助農業升級。</p>
+            <p>(6) 嶄新物聯網與科技藝術應用推廣。</p>
+            <p>(7) 結合校內跨領域研究人員組成長期合作團隊。</p>
+          </div>
+        </div>
+        <div class="tab_a">
+          <label for="two">2. 延攬優秀人才之規劃</label>
+          <input type="checkbox" name="is-tab" id="two">
+          <div class="content">
+            <p>延聘年輕博士研究員作為系所教研儲備人才、推動國家實驗室年輕學者與本中心合聘、以一流環境吸引國內外一流學者及學生。</p>
+          </div>
+        </div>
+        <div class="tab_a">
+          <label for="three">3. 培育高階研發人才之規劃（優秀研究生）</label>
+          <input type="checkbox" name="is-tab" id="three">
+          <div class="content">
+            <p>(1) 推動雙聯學位、重點補助博士生獎助學金、加強延攬國際優質研究生、提供世界級研究環境、創造產業價值與社會回饋貢獻度。</p>
+            <p>(2) 規劃與產業發展高度相關之研究議題，由企業出資與提供兼職工作，吸引研究生於經濟不虞匱乏情況下，專心攻讀博士學位。</p>
+            <p>(3) 規劃訪問國外研發團隊、研究實驗室之方案，以吸引優秀研究生。</p>
+          </div>
+        </div>
+        <div class="tab_a">
+          <label for="four">4. 外部資源連結規劃</label>
+          <input type="checkbox" name="is-tab" id="four">
+          <div class="content">
+            <p>(1) 推動產學合作，進行互訪與合作研究。</p>
+            <p>(2) 與國內外科技/法人單位公司/農企業/金融機構，如高通 (Qualcomm)、思鋭科技、光寶科技公司、台達電、憨農科技、元進莊，大農王農場，江夏有機蔬菜農場，紫雲農場 (有機綠竹筍)，玉山銀行等等，進行合作研究案。</p>
+            <p>(3) 與國內法人機構，如工研院與資策會成立產學聯盟。</p>
+            <p>(4) 與國外實驗室，如UC Irvine、Simula Research、University of Klagenfurt、AT&T Labs 、與InterDigital、Singapore University of Technology and Design.</p>
+          </div>
+        </div>
+        <div class="tab_a">
+          <label for="five">5. 永續經營策略規劃</label>
+          <input type="checkbox" name="is-tab" id="five">
+          <div class="content">
+            <p>透過技術移轉、產學合作、創新創業、服務提供等方式，建立一個可持續經營的特色中心。具體策略如下。</p>
+            <p>(1)研究中心將成為產業聚落的一份子，四年後將可逐步以管理費方式募集經費，持續經營。</p>
+            <p>(2)在中心運作上軌道以後，研究中心人力可提供研究服務，協助自籌經費
+              <p>(3)專注於具世界級影響力的研發課題，並發表論文在頂尖期刊及會議上。</p>
+              <p>(4)與國際級企業長期合作，使清大團隊成為台灣先進產業重要的研發中心。積極與國內、外相關領域研究中心相互交流緊密合作，提升參與教授之研究能量。</p>
+              <p>(5)派送具有研究潛力之校內年輕教授赴國外短期進修，或研究人員至國外知名實驗室合作研究。</p>
+              <p>(6)整合校內資通訊研究資源，並提供貴重研究儀器設備給校內研究人員使用，以達資源共享。</p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+  </div>
+  </div>
+
+
+
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="container footercontent">
+        <div class="footer_left">
+          <p style="font-weight:bold;">
+            LORAWAN物聯網網路技術與應用產業聯盟<br>
+            本聯盟由科技部計畫補助</p>
+          計畫主持人：黃能富 教授 /國立清華大學<br>
+          共同主持人：溫嘉憲 教授 /靜宜大學<br>
+          共同主持人：許健平 教授 /國立清華大學<br>
+          共同主持人：張耀中 副教授 /國立台東大學<br>
+          共同主持人：陳懷恩 副教授 /國立宜蘭大學<br>
+          共同主持人：朱彥銘 專案助理教授 /國立高雄第一科技大學<br>
+          共同主持人：廖冠雄 助理教授 /義守大學
+        </div>
+        <div class="footer_mid">
+          <p style="font-weight:bold;">新聞</p>
+          <i class="fas fa-dove"></i>
+          <a href="">【物聯網報報-科技政策研究與資訊中心】21...</a>
+          <p>2019-11-11</p>
+          <i class="fas fa-dove"></i>
+          <a href="">【物聯網報報-科技政策研究與資訊中心】運...</a>
+          <p>2019-11-11</p>
+          <i class="fas fa-dove"></i>
+          <a href="">【物聯網報報-Anue鉅亨新聞】〈觀察〉觀察...</a>
+          <p>2019-11-11</p>
+          <i class="fas fa-dove"></i>
+          <a href="">【物聯網報報-遠見雜誌】農業4.0力抗極觀察..</a>
+          <p>2019-11-11</p>
+          <i class="fas fa-dove"></i>
+          <a href="">【物聯網報報-中時電子報】科技部提AI科觀...</a>
+          <p>2019-11-11</p>
+        </div>
+        <div class="footer_right">
+          <p style="font-weight:bold;">網站地圖</p>
+          <a href="./index.html">首頁</a>
+          <a href="./2second/news.html">新聞</a>
+          <a href="./2second/activity.html">活動</a>
+          <a href="./2second/about.html">關於</a>
+          <a href="./2second/member.html">成員</a>
+          <a href="./2second/join.html">加入</a>
+          <a href="./2second/contact.html">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+    <div class="footerlast">
+      <div class="container">
+        Copyright © LoRaWAN物聯網網路技術與應用產業聯盟. 2017.
+      </div>
+    </div>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
