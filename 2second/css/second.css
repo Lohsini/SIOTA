@@ -137,10 +137,13 @@ html, body {
   color: var(--main-color);
 }
 
+.header .navbar span {
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+
 .header .navbar span.activepage {
   background-color: var(--main-color);
-  padding: 3px 5px;
-  border-radius: 50px;
   color: white;
 }
 
@@ -188,6 +191,7 @@ html, body {
   text-align: left;
   transition: 0.2s;
   border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .subnav .subnav-content a {
@@ -272,6 +276,78 @@ html, body {
   margin-bottom: 50px;
 }
 
+/* id=target */
+/* #target ,#plan{
+  background-color: rgba(0,0,0,0.04);
+} */
+.target_list {
+  text-align: left;
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 55px;
+}
+
+/* plan */
+.plan table {
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.plan table, .plan th, .plan td {
+  border: 1px black solid;
+  height: 50px;
+  text-align: center;
+}
+
+#table_p {
+  text-align: center;
+  padding: 10px;
+}
+
+/* strategy */
+.tabs label {
+  background-color: var(--word-color);
+  border: solid white 1px;
+  border-radius: 20px;
+  margin: 0;
+  margin-top: 10px;
+  width: 80%;
+  text-align: left;
+  color: white;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tabs .content {
+  text-align: justify;
+  height: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: 0.2s;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tabs .content p {
+  padding: 5px 0;
+  text-indent: 0px;
+}
+
+.tabs input[type=checkbox]:checked+.content {
+  background-color: rgba(222, 217, 217, 0.85);
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.tabs input[type=checkbox] {
+  display: none;
+}
 
 /* pictures */
 .about img {
@@ -295,9 +371,6 @@ html, body {
 .nthumap iframe {
   border: none;
 }
-
-
-
 
 /* contact */
 .contactus {
@@ -334,7 +407,13 @@ textarea {
   min-height: 100px;
 }
 
-/* table */
+/* member table */
+.member table, .member td, .member th {
+  background-color: rgb(227, 230, 141);
+  border: solid black 1px;
+}
+
+/* news+activity table */
 .table {
   padding-top: 50px;
   padding-bottom: 50px;

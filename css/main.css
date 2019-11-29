@@ -137,10 +137,13 @@ html, body {
   color: var(--main-color);
 }
 
+.header .navbar span {
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+
 .header .navbar span.activepage {
   background-color: var(--main-color);
-  padding: 3px 5px;
-  border-radius: 50px;
   color: white;
 }
 
@@ -167,7 +170,6 @@ html, body {
   display: none;
 }
 
-
 /* subnav */
 .subnav {
   float: left;
@@ -189,16 +191,17 @@ html, body {
   text-align: left;
   transition: 0.2s;
   border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.subnav .subnav-content a{
+.subnav .subnav-content a {
   padding: 10px;
-  margin:0;
+  margin: 0;
   text-align: left;
   color: var(--word-color);
 }
 
-.subnav .subnav-content a:hover{
+.subnav .subnav-content a:hover {
   background-color: #eee;
   border-radius: 4px;
 }
@@ -208,7 +211,7 @@ html, body {
 }
 
 /* pictures */
-.slideshow .picture{
+.slideshow .picture {
   position: relative;
   font-family: var(--font-family);
 }
@@ -235,8 +238,9 @@ html, body {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  top:0;
+  top: 0;
 }
+
 /* fade */
 .fade_a {
   animation-name: fade;
@@ -244,8 +248,13 @@ html, body {
 }
 
 @keyframes fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 .prev, .next {
@@ -258,17 +267,20 @@ html, body {
   transition: background-color 0.2s ease;
   border-radius: 5px;
 }
-.prev{
+
+.prev {
   left: 5%;
 }
-.next{
+
+.next {
   right: 5%;
 }
-.prev:hover ,.next:hover {
+
+.prev:hover, .next:hover {
   background-color: rgba(190, 190, 190, 0.5);
 }
 
-.slideshow .dot_group{
+.slideshow .dot_group {
   text-align: center;
   padding: 10px;
 }
@@ -283,6 +295,7 @@ html, body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -334,25 +347,13 @@ html, body {
   box-shadow: 0 0 10px 0 rgb(94, 94, 94);
 }
 
-/* id=target */
-/* #target ,#plan{
-  background-color: rgba(0,0,0,0.04);
-} */
-
-.target_list{
-  text-align: left;
-  display: table;
-  width: 80%;
-  margin: 0 auto;
-  padding-left: 55px;
-}
-
 /* status */
-.status .flex_box{
+.status .flex_box {
   display: flex;
   margin-top: 18px;
 }
-.status .page{
+
+.status .page {
   background-color: rgb(218, 240, 217);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   width: 24%;
@@ -362,27 +363,31 @@ html, body {
   border-radius: 3px;
   overflow: hidden;
 }
-.status .flex_box h4{
+
+.status .flex_box h4 {
   background-color: rgb(14, 87, 12);
   color: white;
   border: solid 1px rgb(186, 104, 29);
   padding: 10px;
 }
-.status_pic{
+
+.status_pic {
   max-width: 100%;
 }
-.status .page .point{
+
+.status .page .point {
   margin: 10px 0;
   flex-grow: 1;
 }
-.status .page p{
+
+.status .page p {
   text-align: left;
   text-indent: 0;
 }
-.status .but{
+
+.status .but {
   padding: 20px;
 }
-
 
 /* pagination */
 /* .pagination {
@@ -402,68 +407,6 @@ html, body {
 .pagination a:hover:not(.activepage1) {
   background-color: rgba(181, 181, 181, 0.44);
 } */
-
-/* plan */
-.plan table {
-  width: 100%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.plan table, th, td {
-  border: 1px black solid;
-  height: 50px;
-  text-align: center;
-}
-
-#table_p {
-  text-align: center;
-  padding: 10px;
-}
-
-/* strategy */
-.tabs label {
-  background-color: var(--word-color);
-  border: solid white 1px;
-  border-radius: 20px;
-  margin: 0;
-  margin-top: 10px;
-  width: 80%;
-  text-align: left;
-  color: white;
-  padding: 5px;
-  padding-left: 20px;
-  font-size: 18px;
-  cursor: pointer;
-  display: inline-block;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.tabs .content {
-  text-align: justify;
-  height: 0;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 10px;
-  transition: 0.2s;
-  overflow: hidden;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.tabs .content p {
-  padding: 5px 0;
-  text-indent: 0px;
-}
-
-.tabs input[type=checkbox]:checked+.content {
-  background-color: rgba(222, 217, 217, 0.85);
-  height: 100%;
-  margin-bottom: 20px;
-}
-
-.tabs input[type=checkbox] {
-  display: none;
-}
-
 /* footer */
 .footer {
   background-color: #383838;
@@ -574,7 +517,6 @@ html, body {
   #rwdbtn:checked~.innavbar {
     right: 0;
   }
-
 }
 
 @media screen and (max-width: 800px) {
