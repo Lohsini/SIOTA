@@ -119,6 +119,7 @@ html, body {
 
 .header .navbar a {
   margin: 10px;
+  margin-bottom: 0;
   text-align: center;
   float: left;
   display: block;
