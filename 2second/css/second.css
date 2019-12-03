@@ -296,21 +296,26 @@ html, body {
   color: white;
 }
 
+/* container */
 .about .container,
 .member .container{
   margin-bottom: 50px;
 }
-.member .container{
 
-}
-.firstpart .container{
+.firstpart .container,
+.secondpart .container,
+.thirdpart .container,
+.fourthpart .container{
   display: flex;
   flex-direction: row;
   /* background-color: rgb(141, 182, 159); */
   padding: 20px 5px;
 }
 
-.firstpart .container p{
+.firstpart .container p,
+.secondpart .container p,
+.thirdpart .container p,
+.fourthpart .container p{
   padding: 0 20px;
 }
 
@@ -338,7 +343,8 @@ html, body {
   border-radius: 50%;
 }
 
-.img_p p{
+.part1_img .img_p p,
+.member_pic .img_p p{
   text-align: center;
   text-indent: 0;
   padding: 20px;
@@ -373,6 +379,11 @@ html, body {
   border: none;
 }
 
+
+.not_real{
+  text-decoration: line-through;
+  color: rgb(200, 200, 200);
+}
 /* id=target */
 /* #target ,#plan{
   background-color: rgba(0,0,0,0.04);
