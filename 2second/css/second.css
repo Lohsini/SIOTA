@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-size: 1.8vmin;
 }
 
 :root {
@@ -51,7 +52,7 @@ html, body {
 }
 
 .top_nav .top_nav_left i {
-  font-size: 22px;
+  font-size: 2.2vmin;
 }
 
 .mail_us {
@@ -345,7 +346,7 @@ html, body {
   text-align: center;
   text-indent: 0;
   padding: 20px;
-  font-size: 18px;
+  font-size: 2vmin;
   width: 100%;
 }
 
@@ -424,7 +425,7 @@ html, body {
   color: white;
   padding: 5px;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 2vmin;
   cursor: pointer;
   display: inline-block;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -501,7 +502,7 @@ textarea {
 .table {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 14px;
+  font-size: 1.7vmin;
   color: var(--word-color);
 }
 
@@ -516,7 +517,6 @@ textarea {
 .table table th {
   background-color: var(--main-color);
   color: white;
-  font-size: 16px;
 }
 
 .table table td {
@@ -533,7 +533,7 @@ textarea {
   background-color: #383838;
   padding: 20px;
   color: var(--footer-color);
-  font-size: 13px;
+  font-size: 1.7vmin;
   line-height: 30px;
   text-align: left;
 }
@@ -576,7 +576,7 @@ textarea {
   text-align: center;
   color: rgb(102, 102, 102);
   padding: 10px;
-  font-size: 13px;
+  font-size: 1.7vmin;
 }
 
 /* media */
@@ -660,11 +660,12 @@ textarea {
     padding-bottom: 10px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .top_nav .container {
-    font-size: 8px;
+    font-size: 0.5vmin;
   }
   .mail_us {
     padding-left: 10px;
-}
+  }
 }

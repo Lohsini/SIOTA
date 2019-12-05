@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-size: 1.8vmin;
 }
 
 :root {
@@ -51,7 +52,7 @@ html, body {
 }
 
 .top_nav .top_nav_left i {
-  font-size: 22px;
+  font-size: 2.2vmin;
 }
 
 .mail_us {
@@ -226,8 +227,8 @@ html, body {
 
 .mySlides .text {
   color: black;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 1.7vmin;
+  padding: 0.5vmin;
   position: absolute;
   bottom: 0;
   background-color: rgba(208, 208, 208, 0.64);
@@ -237,8 +238,7 @@ html, body {
 
 .mySlides .numbertext {
   color: white;
-  font-size: 15px;
-  padding: 8px 12px;
+  padding: 1vmin;
   position: absolute;
   top: 0;
 }
@@ -262,9 +262,9 @@ html, body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 150px;
-  font-size: 30px;
-  padding: 25px 15px;
+  top: 35%;
+  font-size: 3vmin;
+  padding: 2.5vmin 1.7vmin;
   font-weight: bold;
   transition: background-color 0.2s ease;
   border-radius: 5px;
@@ -284,13 +284,13 @@ html, body {
 
 .slideshow .dot_group {
   text-align: center;
-  padding: 10px;
+  padding: 1vmin;
 }
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.9vmin;
+  width: 1.9vmin;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -530,6 +530,9 @@ html, body {
 
 @media screen and (max-width: 600px) {
   .top_nav .container {
-    font-size: 14px;
+    font-size: 0.5vmin;
+  }
+  .mail_us {
+    padding-left: 10px;
   }
 }
