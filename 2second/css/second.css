@@ -321,6 +321,7 @@ html, body {
   background-color: white;
   width: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  align-self: flex-start;
 }
 
 .part1_img img {
@@ -391,6 +392,7 @@ html, body {
   width: 80%;
   margin: 0 auto;
   padding-left: 55px;
+  list-style-position: inside;
 }
 
 /* plan */
