@@ -25,7 +25,7 @@ html, body {
 
 /* top_nav */
 .top_nav {
-  height: 36px;
+  height: 3.6vmin;
   background-color: #FBFBFB;
   border-bottom: solid 1px rgba(210, 209, 209, 0.36);
 }
@@ -91,7 +91,7 @@ html, body {
 
 /* header */
 .header {
-  height: 90px;
+  height: 8vmin;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
@@ -108,7 +108,9 @@ html, body {
   display: flex;
   align-items: center;
 }
-
+.main_logo{
+  height: 8vmin;
+}
 .header .navbar {
   text-transform: capitalize;
   padding: 0;
@@ -328,14 +330,14 @@ html, body {
 }
 
 .contentbox .but {
-  padding-top: 20px;
+  padding-top: 2.5vmin;
   text-align: center;
   /* background-color: rgb(150, 153, 222); */
 }
 
 .contentbox .but button {
   background-color: var(--main-color);
-  padding: 10px;
+  padding: 1.3vmin;
   border-radius: 5px;
   border: none;
   border-style: hidden;
@@ -352,21 +354,25 @@ html, body {
 /* status */
 .status .flex_box {
   display: flex;
-  margin-top: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 .status .page {
   background-color: rgb(218, 240, 217);
   box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.2);
-  width: 24%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
+  height: 100%
 }
-
-.status .flex_box h4 {
+.page_col{
+  margin: 1.8vmin auto;
+  padding: 7px;
+}
+.status .flex_box h5 {
   background-color: rgb(14, 87, 12);
   color: white;
   border: solid 1px rgb(186, 104, 29);
@@ -374,8 +380,8 @@ html, body {
 }
 
 .status_pic {
-  /* max-width: 100%; */
-  height: 12rem;
+  height: 20vmin;
+  object-fit: cover;
 }
 
 .status .page .point {
@@ -415,7 +421,7 @@ html, body {
   background-color: #383838;
   padding: 20px;
   color: var(--footer-color);
-  font-size: 13px;
+  font-size: 1.6vmin;
   line-height: 30px;
   text-align: left;
 }
@@ -521,16 +527,24 @@ html, body {
     right: 0;
   }
 }
-
+@media (min-width: 900px) and (max-width: 1200px) {
+  .status .flex_box h5 {
+    font-size: 2vmin;
+  }
+}
 @media screen and (max-width: 800px) {
   .footer_mid, .footer_right, .facebook, .google {
     display: none;
+  }
+  .status_pic {
+    height: 25vmax;
+    object-fit: cover;
   }
 }
 
 @media screen and (max-width: 600px) {
   .top_nav .container {
-    font-size: 0.5vmin;
+    font-size: 1.2vmin;
   }
   .mail_us {
     padding-left: 10px;
