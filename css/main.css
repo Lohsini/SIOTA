@@ -108,9 +108,11 @@ html, body {
   display: flex;
   align-items: center;
 }
-.main_logo{
+
+.main_logo {
   height: 8vmin;
 }
+
 .header .navbar {
   text-transform: capitalize;
   padding: 0;
@@ -311,14 +313,12 @@ html, body {
   text-align: center;
   font-family: var(--font-family);
   color: var(--word-color);
-  /* background-color: rgb(216, 238, 154); */
 }
 
 .contentbox .title {
   padding: 10px;
   margin-top: 15px;
   font-weight: bold;
-  /* background-color: rgb(17, 180, 116); */
 }
 
 .contentbox p {
@@ -326,13 +326,11 @@ html, body {
   margin: auto;
   text-align: justify;
   text-indent: 30px;
-  /* background-color: rgb(183, 229, 232); */
 }
 
 .contentbox .but {
   padding-top: 2.5vmin;
   text-align: center;
-  /* background-color: rgb(150, 153, 222); */
 }
 
 .contentbox .but button {
@@ -358,7 +356,6 @@ html, body {
   justify-content: center;
 }
 
-
 .status .page {
   background-color: rgb(218, 240, 217);
   box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -368,10 +365,12 @@ html, body {
   overflow: hidden;
   height: 100%
 }
-.page_col{
+
+.page_col {
   margin: 1.8vmin auto;
   padding: 7px;
 }
+
 .status .flex_box h5 {
   background-color: rgb(14, 87, 12);
   color: white;
@@ -398,24 +397,6 @@ html, body {
   padding: 20px;
 }
 
-/* pagination */
-/* .pagination {
-  display: inline-block;
-}
-.pagination a {
-  color: var(--word-color);
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.pagination a.activepage1 {
-  background-color: #2d7687;
-  color: white;
-}
-.pagination a:hover:not(.activepage1) {
-  background-color: rgba(181, 181, 181, 0.44);
-} */
 /* footer */
 .footer {
   background-color: #383838;
@@ -527,15 +508,18 @@ html, body {
     right: 0;
   }
 }
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .status .flex_box h5 {
     font-size: 2vmin;
   }
 }
+
 @media screen and (max-width: 800px) {
   .footer_mid, .footer_right, .facebook, .google {
     display: none;
   }
+
   .status_pic {
     height: 25vmax;
     object-fit: cover;
@@ -546,6 +530,7 @@ html, body {
   .top_nav .container {
     font-size: 1.2vmin;
   }
+
   .mail_us {
     padding-left: 10px;
   }
