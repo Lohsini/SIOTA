@@ -164,7 +164,7 @@ html, body {
 }
 
 .open_btn:hover {
-  color: var(--word-color);
+  color: var(--main-color);
   transition: 0.4s;
   cursor: pointer;
 }
@@ -605,12 +605,19 @@ textarea {
 
   .header .close_btn {
     display: block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+  }
+
+  .header .close_btn:hover {
+    color: var(--main-color);
   }
 
   .header .navbar .innavbar {
     background-color: rgba(66, 70, 75);
     height: 100vh;
-    width: 15%;
+    width: 25%;
     font-size: 0.9em;
     padding: 20% 0;
     position: fixed;
@@ -619,10 +626,15 @@ textarea {
     transition: 0.4s;
   }
 
-  .header .navbar a {
+  .header .navbar a{
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+
+  .header .navbar .navigation {
     width: 100%;
     padding: 15px;
-    color: rgb(255, 255, 255);
+    text-align: center;
   }
 
   .header .navbar a:hover:not(.activepage) {
@@ -637,22 +649,34 @@ textarea {
     color: rgb(255, 255, 255);
   }
 
-  .close_btn {
-    position: absolute;
-    top: 65px;
-    right: 43%;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    transition: 0.4s;
-  }
-
-  .close_btn:hover {
-    color: #dadfe0;
-  }
-
   #rwdbtn:checked~.innavbar {
     right: 0;
   }
+
+  .subnav {
+    float: left;
+  }
+
+  .subnav .subnavbtn {
+    border: none;
+    background-color: inherit;
+    border-radius: 4px;
+  }
+
+  .subnav .subnav-content {
+    display: none;
+    position: static;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    border-radius: 4px;
+  }
+
+  .subnav .subnav-content a {
+    color: var(--word-color);
+  }
+
 }
 
 @media screen and (max-width: 800px) {
