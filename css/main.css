@@ -13,7 +13,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-size: 1.8vmin;
+  font-size: 16px;
 }
 
 :root {
@@ -25,7 +25,7 @@ html, body {
 
 /* top_nav */
 .top_nav {
-  height: 3.6vmin;
+  height: 2rem;
   background-color: #FBFBFB;
   border-bottom: solid 1px rgba(210, 209, 209, 0.36);
 }
@@ -52,7 +52,7 @@ html, body {
 }
 
 .top_nav .top_nav_left i {
-  font-size: 2.2vmin;
+  font-size: 1rem;
 }
 
 .mail_us {
@@ -91,7 +91,7 @@ html, body {
 
 /* header */
 .header {
-  height: 8vmin;
+  height: 5rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
@@ -110,7 +110,7 @@ html, body {
 }
 
 .main_logo {
-  height: 8vmin;
+  height: 4rem;
 }
 
 .header .navbar {
@@ -225,13 +225,13 @@ html, body {
 
 .mySlides img {
   width: 100%;
-  height: 23vw;
+  height: 400px;
   object-fit: cover;
 }
 
 .mySlides .text {
   color: black;
-  font-size: 1.7vmin;
+  font-size: 1rem;
   padding: 0.5vmin;
   position: absolute;
   bottom: 0;
@@ -267,7 +267,7 @@ html, body {
   cursor: pointer;
   position: absolute;
   top: 35%;
-  font-size: 3vmin;
+  font-size: 3rem;
   padding: 2.5vmin 1.7vmin;
   font-weight: bold;
   transition: background-color 0.2s ease;
@@ -325,7 +325,7 @@ html, body {
   width: 80%;
   margin: auto;
   text-align: justify;
-  text-indent: 30px;
+  text-indent: 2rem;
 }
 
 .contentbox .but {
@@ -402,7 +402,7 @@ html, body {
   background-color: #383838;
   padding: 20px;
   color: var(--footer-color);
-  font-size: 1.6vmin;
+  font-size: 0.8rem;
   line-height: 30px;
   text-align: left;
 }
@@ -440,12 +440,12 @@ html, body {
   margin-bottom: 5px;
 }
 
-.footerlast {
+.lastfooter {
   background-color: #333;
   text-align: center;
   color: rgb(102, 102, 102);
   padding: 10px;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -480,7 +480,7 @@ html, body {
     transition: 0.4s;
   }
 
-  .header .navbar a{
+  .header .navbar a {
     margin: 0;
     color: rgb(255, 255, 255);
   }
@@ -530,13 +530,6 @@ html, body {
   .subnav .subnav-content a {
     color: var(--word-color);
   }
-
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-  .status .flex_box h5 {
-    font-size: 2vmin;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -544,15 +537,27 @@ html, body {
     display: none;
   }
 
+  .footer_left {
+    margin: auto;
+  }
+
   .status_pic {
     height: 25vmax;
     object-fit: cover;
+  }
+
+  html, body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .top_nav .container {
-    font-size: 1.2vmin;
+    font-size: 8px;
   }
 
   .mail_us {
