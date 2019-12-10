@@ -622,6 +622,7 @@ textarea {
     position: fixed;
     top: 0;
     right: -100%;
+    overflow: auto;
   }
 
   .header .navbar a {
@@ -659,6 +660,7 @@ textarea {
     border: none;
     background-color: inherit;
     border-radius: 4px;
+    padding-top: 7px;
   }
 
   .subnav .subnav-content {

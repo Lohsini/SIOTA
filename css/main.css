@@ -476,6 +476,7 @@ html, body {
     position: fixed;
     top: 0;
     right: -100%;
+    overflow: auto;
   }
 
   .header .navbar a {
@@ -513,6 +514,7 @@ html, body {
     border: none;
     background-color: inherit;
     border-radius: 4px;
+    padding-top: 7px;
   }
 
   .subnav .subnav-content {
