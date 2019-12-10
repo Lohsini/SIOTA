@@ -108,7 +108,8 @@ html, body {
   display: flex;
   align-items: center;
 }
-.main_logo{
+
+.main_logo {
   height: 4rem;
 }
 
@@ -263,7 +264,7 @@ html, body {
 /* top_title */
 .top_title {
   background-color: var(--main-color);
-  height: 3rem;
+  height: 5rem;
   width: 100%;
   margin-bottom: 30px;
   font-family: 'Noto Sans TC', 'Roboto', sans-serif;
@@ -276,13 +277,13 @@ html, body {
 }
 
 .top_title h2 {
-  line-height: 3rem;
+  line-height: 5rem;
   margin: 0;
   color: white;
 }
 
 .top_title .top_title_right {
-  line-height: 3rem;
+  line-height: 5rem;
   margin: 0;
   color: white;
 }
@@ -328,7 +329,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-
 /* firstpart img */
 .part1_img {
   background-color: white;
@@ -360,7 +360,6 @@ html, body {
   padding: 20px;
   width: 100%;
 }
-
 
 .member .other {
   display: flex;
@@ -441,7 +440,6 @@ html, body {
   display: inline-block;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 .tabs .content {
   text-align: justify;
@@ -616,18 +614,17 @@ textarea {
   }
 
   .header .navbar .innavbar {
-    background-color: rgba(66, 70, 75);
+    background-color: rgba(66, 70, 75, 0.95);
     height: 100vh;
-    width: 25%;
+    width: 100%;
     font-size: 0.9em;
     padding: 20% 0;
     position: fixed;
     top: 0;
     right: -100%;
-    transition: 0.4s;
   }
 
-  .header .navbar a{
+  .header .navbar a {
     margin: 0;
     color: rgb(255, 255, 255);
   }
@@ -677,16 +674,17 @@ textarea {
   .subnav .subnav-content a {
     color: var(--word-color);
   }
-
 }
 
 @media screen and (max-width: 800px) {
   .footer_mid, .footer_right, .facebook, .google {
     display: none;
   }
+
   .footer_left {
     margin: auto;
   }
+
   html, body {
     font-size: 14px;
   }
@@ -694,10 +692,19 @@ textarea {
   h2 {
     font-size: 1.4rem;
   }
-/* part RWD ------------------------------------------*/
+
+  .tabs label {
+    font-size: 0.8rem;
+  }
+
+  .about .title {
+    font-size: 1.3rem;
+  }
+
+  /* part RWD ------------------------------------------*/
   .part .container {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
   .part2_1 .part1_img, .part1_img {
     width: 80%;
@@ -708,9 +715,11 @@ textarea {
     padding: 0;
     padding-bottom: 10px;
   }
-  .part .img_p p{
+
+  .part .img_p p {
     padding: 10px;
   }
+
   .part .container {
     padding-bottom: 20px;
   }
@@ -720,6 +729,7 @@ textarea {
   .top_nav .container {
     font-size: 8px;
   }
+
   .mail_us {
     padding-left: 10px;
   }

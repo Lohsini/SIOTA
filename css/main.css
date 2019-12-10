@@ -374,7 +374,6 @@ html, body {
 .status .flex_box h5 {
   background-color: rgb(14, 87, 12);
   color: white;
-  border: solid 1px rgb(186, 104, 29);
   padding: 10px;
 }
 
@@ -469,15 +468,14 @@ html, body {
   }
 
   .header .navbar .innavbar {
-    background-color: rgba(66, 70, 75);
+    background-color: rgba(66, 70, 75, 0.95);
     height: 100vh;
-    width: 25%;
+    width: 100%;
     font-size: 0.9em;
     padding: 20% 0;
     position: fixed;
     top: 0;
     right: -100%;
-    transition: 0.4s;
   }
 
   .header .navbar a {
@@ -550,8 +548,12 @@ html, body {
     font-size: 14px;
   }
 
-  h2 {
-    font-size: 1.4rem;
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .topic .title{
+    font-size: 1.3rem;
   }
 }
 
