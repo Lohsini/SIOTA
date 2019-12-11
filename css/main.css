@@ -312,6 +312,7 @@ html, body {
   text-align: center;
   font-family: var(--font-family);
   color: var(--word-color);
+  background-color: rgb(167, 87, 81);
 }
 
 .contentbox .title {
