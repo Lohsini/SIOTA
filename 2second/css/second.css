@@ -288,10 +288,6 @@ html, body {
   color: white;
 }
 
-.top_title .top_title_ul {
-  font-size: 0.8rem;
-}
-
 .top_title .top_title_right a {
   color: #E2E2E2;
   text-decoration: none;
@@ -330,6 +326,13 @@ html, body {
 }
 
 /* firstpart img */
+.all_parts_img{
+  width: 100%;
+  border-radius: 3px;
+}
+.top_img{
+  height: auto;
+}
 .part1_img {
   background-color: white;
   width: 50%;
@@ -351,6 +354,7 @@ html, body {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .part1_img .img_p p,
@@ -364,18 +368,19 @@ html, body {
 .member .other {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .member img {
   width: 12rem;
-  height: 14rem;
+  height: 12rem;
   border-radius: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 .member_pic {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* pictures */
@@ -728,11 +733,26 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+  .top_title .top_title_ul {
+    font-size: 0.6rem;
+  }
+
   .top_nav .container {
     font-size: 8px;
   }
 
   .mail_us {
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top_title h2 {
+    font-size: 1.1rem;
+  }
+
+  .member .even {
+    background-color: rgba(0, 0, 0, 0.06);
+    width: 100%
   }
 }

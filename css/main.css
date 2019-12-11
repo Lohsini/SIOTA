@@ -266,10 +266,9 @@ html, body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 35%;
+  top: 30%;
   font-size: 3rem;
-  padding: 2.5vmin 1.7vmin;
-  font-weight: bold;
+  padding: 3rem 2rem;
   transition: background-color 0.2s ease;
   border-radius: 5px;
 }
