@@ -218,11 +218,11 @@ html, body {
 }
 
 
-:target:before {
+/* :target:before {
 content: "";
 display: block;
 height: 5rem;
-}
+} */
 
 /* ------------------------------------------------------- */
 /* content */
