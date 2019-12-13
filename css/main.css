@@ -269,12 +269,13 @@ html, body {
   position: absolute;
   top: 0;
   bottom: 0;
-  /* background-color: rgb(90, 153, 71); */
   width: 15%;
   font-size: 3rem;
   text-align: center;
-  /* line-height: 400px; */
   transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prev {
