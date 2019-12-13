@@ -217,6 +217,13 @@ html, body {
   flex-direction: column;
 }
 
+
+:target:before {
+content: "";
+display: block;
+height: 5rem;
+}
+
 /* ------------------------------------------------------- */
 /* content */
 .contentbox {
@@ -403,8 +410,6 @@ html, body {
 
 /* pictures */
 .about img {
-  width: 100%;
-  height: auto;
   padding: 30px 0;
 }
 
@@ -496,7 +501,7 @@ html, body {
   display: none;
 }
 .color_background{
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 10px;
   width: 80%;
   margin: auto;
