@@ -198,6 +198,7 @@ html, body {
   transition: 0.2s;
   border-radius: 4px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .subnav .subnav-content a {
@@ -209,7 +210,6 @@ html, body {
 
 .subnav .subnav-content a:hover {
   background-color: #eee;
-  border-radius: 4px;
 }
 
 .subnav:hover .subnav-content {
@@ -217,12 +217,11 @@ html, body {
   flex-direction: column;
 }
 
-
-/* :target:before {
-content: "";
-display: block;
-height: 5rem;
-} */
+:target:before {
+  content: "";
+  display: block;
+  height: 5rem;
+}
 
 /* ------------------------------------------------------- */
 /* content */
@@ -331,32 +330,38 @@ height: 5rem;
 .part2_1 {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.about_member p{
+
+.about_member p {
   text-indent: 0;
 }
-.about_member{
+
+.about_member {
   width: 80%;
   margin: auto;
 }
+
 .about_member dl,
-.strategy_dl dl{
+.strategy_dl dl {
   text-align: justify;
   padding: 0 20px;
 }
 
-.strategy_dl dl{
+.strategy_dl dl {
   width: 90%;
   margin: auto;
   padding: 10px 0;
 }
+
 /* firstpart img */
-.all_parts_img{
+.all_parts_img {
   width: 100%;
   border-radius: 3px;
 }
-.top_img{
+
+.top_img {
   height: auto;
 }
+
 .part1_img {
   background-color: white;
   width: 50%;
@@ -469,12 +474,15 @@ height: 5rem;
   flex-direction: row;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
-.strategy_number{
+
+.strategy_number {
   flex-grow: 1;
 }
-.strategy_icon{
+
+.strategy_icon {
   margin-right: 2%;
 }
+
 .tabs .content {
   text-align: justify;
   height: 0;
@@ -500,7 +508,8 @@ height: 5rem;
 .tabs input[type=checkbox] {
   display: none;
 }
-.color_background{
+
+.color_background {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 10px;
   width: 80%;
@@ -528,6 +537,7 @@ height: 5rem;
   color: white;
   box-shadow: 0 0 5px 0 rgb(94, 94, 94);
 }
+
 /* contact */
 .contactus {
   width: 100%;
