@@ -225,7 +225,7 @@ html, body {
 
 .mySlides img {
   width: 100%;
-  height: 400px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -245,6 +245,7 @@ html, body {
   padding: 1vmin;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 /* fade */
@@ -266,23 +267,32 @@ html, body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 0;
+  bottom: 0;
+  /* background-color: rgb(90, 153, 71); */
+  width: 15%;
   font-size: 3rem;
-  padding: 3rem 2rem;
+  text-align: center;
+  /* line-height: 400px; */
   transition: background-color 0.2s ease;
-  border-radius: 5px;
 }
 
 .prev {
-  left: 5%;
+  left: 0;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
 }
 
 .next {
-  right: 5%;
+  right: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(190, 190, 190, 0.5);
+.prev:hover {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .0005) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.next:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0005) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .slideshow .dot_group {
@@ -360,7 +370,7 @@ html, body {
   box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   height: 100%
 }
@@ -549,11 +559,11 @@ html, body {
     font-size: 14px;
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 
-  .topic .title{
+  .topic .title {
     font-size: 1.3rem;
   }
 }
