@@ -355,7 +355,9 @@ html, body {
 /* firstpart img */
 .all_parts_img {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 4px;
+  /* object-fit: cover;
+  height: 500px; */
 }
 
 .top_img {
@@ -416,13 +418,13 @@ html, body {
 
 /* ------------------------------------------- */
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+#myImg, #myImg2{
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover, #myImg2:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -448,7 +450,7 @@ html, body {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+.captionn {
   margin: auto;
   display: block;
   width: 80%;
@@ -458,6 +460,17 @@ html, body {
   padding: 10px 0;
   height: 150px;
 }
+
+/* Add Animation - Zoom in the Modal */
+/* .modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+} */
 
 /* -------------------------------------------- */
 
@@ -479,7 +492,8 @@ html, body {
 
 /* pictures */
 .about img {
-  padding: 30px 0;
+  margin: 30px 0;
+  border-radius: 4px;
 }
 
 .nthumap iframe {
