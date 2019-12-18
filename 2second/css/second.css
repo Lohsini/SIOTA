@@ -418,12 +418,14 @@ html, body {
 
 /* ------------------------------------------- */
 /* Style the Image Used to Trigger the Modal */
-#myImg, #myImg1_2{
+.myImg{
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover, #myImg1_2:hover {opacity: 0.7;}
+.myImg:hover{
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
