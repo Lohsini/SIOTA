@@ -415,19 +415,16 @@ html, body {
   padding: 2rem;
 }
 
-
 /* ------------------------------------------- */
-/* Style the Image Used to Trigger the Modal */
-.myImg{
+.myImg {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.myImg:hover{
+.myImg:hover {
   opacity: 0.7;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -438,20 +435,13 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 90%;
-  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .closex {
   position: absolute;
   right: 15%;
+  top: 20px;
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -464,7 +454,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 .caption {
   margin: auto;
   display: block;
@@ -476,35 +465,27 @@ html, body {
   font-size: 1.5rem;
 }
 
-/* Add Animation - Zoom in the Modal */
-/* .modal-content, #caption {
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 1000px;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-} */
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
 
 /* -------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* pictures */
 .about img {
   margin: 30px 0;
