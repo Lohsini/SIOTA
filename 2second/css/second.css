@@ -484,7 +484,6 @@ html, body {
   }
 }
 
-
 /* -------------------------------------------- */
 /* pictures */
 .about img {
@@ -700,14 +699,19 @@ textarea {
 .footercontent {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+}
+
+.footer_left,
+.footer_mid,
+.footer_right {
+  flex-grow: 1;
 }
 
 .footer_right a {
   display: flex;
   flex-direction: column;
   color: var(--footer-color);
-  border-bottom: dotted var(--footer-color) 1px;
+  border-bottom: dotted #696767 1px;
   width: 100%;
 }
 
