@@ -835,6 +835,7 @@ textarea {
 
   .footer_left {
     margin: auto;
+    flex-grow: 0;
   }
 
   html, body {

@@ -556,6 +556,7 @@ html, body {
 
   .footer_left {
     margin: auto;
+    flex-grow: 0;
   }
 
   .status_pic {
