@@ -690,12 +690,12 @@ textarea {
 /* footer------------------------------------------------- */
 .back_to_top {
   font-size: 25px;
-  color: white;
+  color: var(--footer-color);
   margin-right: 20px;
 }
 
 .back_to_top:hover {
-  color: var(--footer-color);
+  color: white;
 }
 
 .footer {
