@@ -14,6 +14,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -687,6 +688,16 @@ textarea {
 }
 
 /* footer------------------------------------------------- */
+.back_to_top {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+}
+
+.back_to_top:hover {
+  color: var(--footer-color);
+}
+
 .footer {
   background-color: #383838;
   padding: 20px;
