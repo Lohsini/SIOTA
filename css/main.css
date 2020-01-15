@@ -410,7 +410,7 @@ html, body {
 /* footer */
 .back_to_top {
   font-size: 25px;
-  color: var(--footer-color)white;
+  color: var(--footer-color);
   margin-right: 20px;
 }
 
