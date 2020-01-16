@@ -389,8 +389,14 @@ html, body {
 }
 
 .status_pic {
+  width: 100%;
   height: 20vmin;
   object-fit: cover;
+  transition:  0.5s linear;
+}
+
+.status_pic:hover{
+  transform: scale(1.05);
 }
 
 .status .page .point {
