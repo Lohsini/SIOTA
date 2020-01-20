@@ -25,7 +25,22 @@ html, body {
 }
 
 .time {
-  background:rgb(246, 247, 158);
+  /* background: url("../picture_index/time.jpg") center;
+  background-size: cover;
+  background-attachment: fixed; */
+  background-color: #e2d8bd;
+  height: 100px;
+  font-family: var(--font-family);
+}
+
+.tt {
+  line-height: 100px;
+  color: #6d5f2c;
+  z-index: 1;
+}
+
+#time {
+  font-size: 2rem;
 }
 
 /* top_nav */
