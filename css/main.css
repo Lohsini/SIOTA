@@ -25,10 +25,10 @@ html, body {
 }
 
 .time {
-  /* background: url("../picture_index/time.jpg") center;
+  background: url("../picture_index/time.jpg") center;
   background-size: cover;
-  background-attachment: fixed; */
-  background-color: #e2d8bd;
+  background-attachment: fixed;
+  /* background-color: #e2d8bd; */
   font-family: var(--font-family);
   color: #6d5f2c;
   z-index: 1;
