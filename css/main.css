@@ -29,16 +29,14 @@ html, body {
   background-size: cover;
   background-attachment: fixed; */
   background-color: #e2d8bd;
-  height: 100px;
   font-family: var(--font-family);
-}
-
-.tt {
-  line-height: 100px;
   color: #6d5f2c;
   z-index: 1;
 }
 
+.time p{
+  padding: 20px;
+}
 #time {
   font-size: 2rem;
 }
