@@ -24,6 +24,12 @@ html, body {
   --font-family: 'Noto Sans TC', 'Roboto', sans-serif;
 }
 
+.font_style {
+  font-family: var(--font-family);
+  color: var(--word-color);
+  padding: 20px;
+}
+
 /* top_nav */
 .top_nav {
   height: 2rem;
@@ -459,6 +465,7 @@ html, body {
   margin: auto;
   display: block;
   width: 90%;
+  font-family: var(--font-family);
   max-width: 1000px;
   text-align: center;
   color: white;
