@@ -30,6 +30,11 @@ html, body {
   padding: 20px;
 }
 
+.fourthpart_p{
+  border-left: gray solid 3px;
+  font-size: 1.5rem;
+}
+
 /* top_nav */
 .top_nav {
   height: 2rem;
