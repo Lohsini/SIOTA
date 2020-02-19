@@ -619,3 +619,11 @@ html, body {
     padding-left: 10px;
   }
 }
+
+
+#div1,#div2,#div3,#div4,#div5 {
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+  width : 240px;
+}
