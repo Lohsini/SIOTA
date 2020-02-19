@@ -30,7 +30,7 @@ html, body {
   padding: 20px;
 }
 
-.fourthpart_p{
+.fourthpart_p {
   /* border-left: gray solid 3px; */
   font-size: 1.5rem;
 }
@@ -919,4 +919,11 @@ textarea {
   .top_title h2 {
     font-size: 1.1rem;
   }
+}
+
+#div1, #div2, #div3, #div4, #div5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 240px;
 }
