@@ -36,7 +36,10 @@ newsTable.appendChild(newsTh);
 
 for (var i = 0; i < links.length; i++) {
   var newsTr = document.createElement("tr");
-  newsTr.setAttribute("onclick", "location.href=" + links[i].href);
+  // newsTr.setAttribute("onclick","location.href='"+links[i].href+"'");
+
+  newsTr.href = links[i].href;
+  newsTr.addEventListener("click", navigateToUrl, false);
 
   var newsTd_type = document.createElement("td");
   newsTd_type.innerHTML = links[i].type;
@@ -52,4 +55,9 @@ for (var i = 0; i < links.length; i++) {
   newsTr.appendChild(newsTd_date);
 
   newsTable.appendChild(newsTr);
+}
+
+function navigateToUrl(event) {
+  // 參考：https://stackoverflow.com/questions/1226714/how-to-get-the-browser-to-navigate-to-url-in-javascript
+  window.location.href = event.currentTarget.href;
 }
