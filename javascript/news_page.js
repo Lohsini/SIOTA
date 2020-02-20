@@ -36,6 +36,7 @@ newsTable.appendChild(newsTh);
 
 for (var i = 0; i < links.length; i++) {
   var newsTr = document.createElement("tr");
+  newsTr.setAttribute("onclick","go()");
 
   var newsTd_type = document.createElement("td");
   newsTd_type.innerHTML = links[i].type;
@@ -51,4 +52,10 @@ for (var i = 0; i < links.length; i++) {
   newsTr.appendChild(newsTd_date);
 
   newsTable.appendChild(newsTr);
+}
+
+function go(){
+  for (var i = 0; i < links.length; i++) {
+    location.href = links[i].href;
+  }
 }
