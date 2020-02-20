@@ -699,7 +699,7 @@ textarea {
 
 .table table td {
   cursor: pointer;
-  font-family: 'Noto Sans TC', sans-serif;
+  /* font-family: 'Noto Sans TC', sans-serif; */
 }
 
 .table table tr:hover {
