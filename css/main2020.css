@@ -622,7 +622,7 @@ html, body {
 }
 
 
-#div1,#div2,#div3,#div4,#div5 {
+#newsSection div{
   overflow : hidden;
   text-overflow : ellipsis;
   white-space : nowrap;
