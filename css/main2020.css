@@ -19,6 +19,7 @@ html, body {
 
 :root {
   --main-color: #279FBB;
+  --hover-color: #2d7687;
   --word-color: rgb(86, 94, 98);
   --footer-color: #C9C9C9;
   --font-family: 'Noto Sans TC', 'Roboto', sans-serif;
@@ -372,7 +373,7 @@ html, body {
 }
 
 .contentbox .but button:hover {
-  background-color: #2d7687;
+  background-color: var(--hover-color);
   color: white;
   box-shadow: 0 0 10px 0 rgb(94, 94, 94);
 }
