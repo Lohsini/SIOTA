@@ -35,12 +35,12 @@ function getNewses() {
 	$.ajax({url: "https://lohi-work-oh.herokuapp.com/getNews.php",
 		success: function(result) {
 	    	links = JSON.parse(result);
-	    	renderNews();
+	    	renderNews_page();
 	  	}
 	  });
 }
 
-function renderNews() {
+function renderNews_page() {
   var newsTable = document.getElementById("newsTable");
   var newsTh = document.getElementById("newsTh");
   newsTable.appendChild(newsTh);
