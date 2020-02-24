@@ -36,6 +36,7 @@ function getNewses() {
 		success: function(result) {
 	    	links = JSON.parse(result);
 	    	renderNews_page();
+				renderNews();
 	  	}
 	  });
 }
@@ -71,5 +72,29 @@ function renderNews_page() {
   function navigateToUrl(event) {
     // 參考：https://stackoverflow.com/questions/1226714/how-to-get-the-browser-to-navigate-to-url-in-javascript
     window.location.href = event.currentTarget.href;
+  }
+}
+function renderNews() {
+  var newsSection = document.getElementById("newsSection");
+
+  for (var i = 0; i < 4; i++) {
+    var newsWrapper = document.createElement("div");
+
+    var newsicon = document.createElement("i");
+    newsicon.setAttribute("class", "fas fa-dove");
+    newsWrapper.appendChild(newsicon);
+
+    var newstitle = document.createElement("a");
+    newstitle.setAttribute("href", links[i].href);
+    newstitle.innerHTML = links[i].title;
+    newsWrapper.appendChild(newstitle);
+
+
+    var newsdate = document.createElement("p");
+    newsdate.innerHTML = links[i].day;
+    newsWrapper.appendChild(newsdate);
+
+
+    newsSection.appendChild(newsWrapper);
   }
 }
