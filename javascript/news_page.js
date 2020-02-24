@@ -29,7 +29,9 @@
 //     day: "2019-12-31"
 //   }
 // ];
-
+$(document).ready(function() {
+  getNewses();
+});
 
 function getNewses() {
 	$.ajax({url: "https://lohi-work-oh.herokuapp.com/getNews.php",

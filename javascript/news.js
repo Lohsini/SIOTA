@@ -30,6 +30,9 @@
 //     day:"2019-12-31"
 //   }
 // ];
+$(document).ready(function() {
+  getNewses();
+});
 
 function getNewses() {
   $.ajax({
