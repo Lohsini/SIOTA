@@ -1,4 +1,4 @@
-<?php的下一行加上：
+<?php
 header("Access-Control-Allow-Origin: *");
 
 class News{
