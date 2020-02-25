@@ -120,6 +120,12 @@ html, body {
   width: 100%;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 5rem;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
