@@ -122,12 +122,6 @@ html, body {
   z-index: 1;
 }
 
-:target:before {
-  content: "";
-  display: block;
-  height: 5rem;
-}
-
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -442,7 +436,7 @@ html, body {
 }
 
 .backtop {
-  font-size: 25px;
+  font-size: 3rem;
   color: var(--footer-color);
   position: fixed;
   bottom: 60px;
