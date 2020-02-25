@@ -1,6 +1,6 @@
 $(document).ready(function() {
    $('.backtop').hide();
-   $(document).scroll(function() {
+   $("body").scroll(function() {
      if ($(this).scrollTop() > 500) {
        $('.backtop').fadeIn();
      } else {
@@ -8,7 +8,7 @@ $(document).ready(function() {
      }
    });
    $('.backtop').on('click', function() {
-     $('html').animate({
+     $('html,body').animate({
        scrollTop: 0
      }, 100);
    });
