@@ -17,6 +17,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body{
+  height: auto;
+}
+
 :root {
   --main-color: #279FBB;
   --hover-color: #2d7687;
@@ -431,16 +435,19 @@ html, body {
   padding: 20px;
 }
 
-/* footer */
-.back_to_top {
+.backtop {
   font-size: 25px;
   color: var(--footer-color);
-  margin-right: 20px;
+  position: fixed;
+  bottom: 60px;
+  right: 10%;
 }
 
-.back_to_top:hover {
-  color: white;
+.backtop:hover {
+  color: #676767;
 }
+
+/* footer */
 
 .footer {
   background-color: #383838;
