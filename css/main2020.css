@@ -443,6 +443,7 @@ html, body {
 
 .backtop:hover {
   color: #676767;
+  cursor: pointer;
 }
 
 /* footer */
