@@ -116,25 +116,27 @@
   <div class="contactus contentbox">
     <div class="container">
       <h2>聯絡我們</h2>
-      <div class="inputgroup">
-        <label for="">您的姓名</label>
-        <input type="text" name="name" placeholder="姓名 name">
-      </div>
-      <div class="inputgroup">
-        <label for="">您的電子信箱</label>
-        <input type="text" name="email" placeholder="電子信箱 email">
-      </div>
-      <div class="inputgroup">
-        <label for="">您的連絡電話</label>
-        <input type="text" name="phonenumber" placeholder="連絡電話 phone number">
-      </div>
-      <div class="inputgroup">
-        <label for="">您的意見內容</label>
-        <textarea placeholder="your message..."></textarea>
-      </div>
-      <div class="contact_input">
-        <input type="button" name="submit" value="送出" id="window_alart">
-      </div>
+      <form action="b.php" method="post">
+        <div class="inputgroup">
+          <label for="">您的姓名</label>
+          <input type="text" name="name" placeholder="姓名 name">
+        </div>
+        <div class="inputgroup">
+          <label for="">您的電子信箱</label>
+          <input type="text" name="email" placeholder="電子信箱 email">
+        </div>
+        <div class="inputgroup">
+          <label for="">您的連絡電話</label>
+          <input type="text" name="phonenumber" placeholder="連絡電話 phone number">
+        </div>
+        <div class="inputgroup">
+          <label for="">您的意見內容</label>
+          <textarea name="message" placeholder="your message..."></textarea>
+        </div>
+        <div class="contact_input">
+          <input type="submit" name="submit" value="送出">
+        </div>
+      </form>
     </div>
   </div>
 
