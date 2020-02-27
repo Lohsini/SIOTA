@@ -116,14 +116,14 @@
   <div class="contactus contentbox">
     <div class="container">
       <h2>聯絡我們</h2>
-      <form action="b.php" method="post">
+      <!-- <form action="./b.php" method="get" onsubmit="alart("表單輸出");"> -->
         <div class="inputgroup">
           <label for="">您的姓名</label>
           <input type="text" name="name" placeholder="姓名 name">
         </div>
         <div class="inputgroup">
           <label for="">您的電子信箱</label>
-          <input type="text" name="email" placeholder="電子信箱 email">
+          <input type="email" name="email" placeholder="電子信箱 email" required>
         </div>
         <div class="inputgroup">
           <label for="">您的連絡電話</label>
@@ -134,9 +134,9 @@
           <textarea name="message" placeholder="your message..."></textarea>
         </div>
         <div class="contact_input">
-          <input type="submit" name="submit" value="送出">
+          <input type="button" name="submit" value="送出" id="window_alart">
         </div>
-      </form>
+      <!-- </form> -->
     </div>
   </div>
 
