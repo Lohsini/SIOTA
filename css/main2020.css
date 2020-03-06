@@ -114,7 +114,7 @@ html, body {
   height: 5rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 10;
   width: 100%;
