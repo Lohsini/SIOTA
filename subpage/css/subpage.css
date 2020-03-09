@@ -18,17 +18,15 @@ html, body {
 }
 
 :root {
-  --main-color: #279FBB;
-  /* #53a68e */
-  /* --second-color:#279FBB; */
-  /* #7bb99d; */
-  --hover-color: #2d7687;
-  /* #249078 */
-  --background-color: rgba(0, 0, 0, 0.05);
-  --colorful-background: rgba(123, 185, 157, 0.2);
+  --font-family: 'Noto Sans TC', 'Roboto', sans-serif;
   --word-color: rgb(86, 94, 98);
   --footer-color: #C9C9C9;
-  --font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+  --main-color: #295651;
+  --hover-color: #072a24;
+  --second-color: #0b4609;
+  --text-bg-color: rgba(123, 185, 157, 0.2);
+  --member-color: rgba(0, 0, 0, 0.06);
+  --colorful-background: #e1eee0;
 }
 
 .font_style {
@@ -292,7 +290,7 @@ html, body {
   height: 5rem;
   width: 100%;
   margin-bottom: 30px;
-  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+  font-family: var(--font-family);
 }
 
 .top_title .container {
@@ -347,7 +345,7 @@ html, body {
 }
 
 .part2_1 {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color:   var(--member-color);
 }
 
 .about_member p {
@@ -553,7 +551,7 @@ html, body {
 
 /* strategy */
 .tabs label {
-  background-color: var(--hover-color);
+  background-color: var(--second-color);
   border: solid white 1px;
   border-radius: 20px;
   margin: 0;
@@ -604,7 +602,7 @@ html, body {
 }
 
 .color_background {
-  background-color: var(--background-color);
+  background-color: var(--text-bg-color);
   padding: 10px;
   width: 80%;
   margin: auto;
@@ -637,7 +635,7 @@ html, body {
   width: 100%;
   padding: 60px 0;
   text-align: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: var(--font-family);
   color: var(--word-color);
 }
 
@@ -692,14 +690,13 @@ textarea {
 }
 
 .table table th {
-  background-color: var(--hover-color);
+  background-color: var(--second-color);
   color: white;
   vertical-align: middle;
 }
 
 .table table td {
   cursor: pointer;
-  /* font-family: 'Noto Sans TC', sans-serif; */
 }
 
 .table table tr:hover {
