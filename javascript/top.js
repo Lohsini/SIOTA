@@ -1,13 +1,13 @@
 $(document).ready(function() {
-   $('.backtop').hide();
+   $('.back_to_top').hide();
    $("body").scroll(function() {
      if ($(this).scrollTop() > 500) {
-       $('.backtop').fadeIn();
+       $('.back_to_top').fadeIn();
      } else {
-       $('.backtop').fadeOut();
+       $('.back_to_top').fadeOut();
      }
    });
-   $('.backtop').on('click', function() {
+   $('.back_to_top').on('click', function() {
      $('html,body').animate({
        scrollTop: 0
      }, 100);
