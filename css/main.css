@@ -228,6 +228,7 @@ html, body {
   flex-direction: column;
 }
 
+/* -------------------------------------------------- */
 /* pictures */
 .slideshow .slide_pictures {
   position: relative;
