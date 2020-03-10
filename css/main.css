@@ -20,11 +20,11 @@ html, body {
 :root {
   --font-family: 'Noto Sans TC', 'Roboto', sans-serif;
   --word-color: rgb(86, 94, 98);
-  --footer-color: #C9C9C9;
-  --second-color: #0b4609;
-  --research-fields-color: #e1eee0;
   --main-color: #295651;
   --hover-color: #072a24;
+  --second-color: #0b4609;
+  --footer-color: #C9C9C9;
+  --research-fields-color: #e1eee0;
 }
 
 /* top_nav */
@@ -411,6 +411,7 @@ html, body {
   padding: 20px;
 }
 
+/* footer */
 .back_to_top {
   font-size: 3rem;
   color: var(--footer-color);
@@ -424,7 +425,6 @@ html, body {
   cursor: pointer;
 }
 
-/* footer */
 .footer {
   background-color: #383838;
   padding: 20px;
