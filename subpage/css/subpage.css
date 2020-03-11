@@ -102,8 +102,7 @@ html, body {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
-  z-index: 10;
-  width: 100%;
+  z-index: 1;
 }
 
 :target:before {
@@ -344,20 +343,20 @@ html, body {
   width: fit-content;
 }
 
-.part2_1 {
+.research_member {
   background-color: var(--member-color);
 }
 
-.about_member p {
+.research_member_about p {
   text-indent: 0;
 }
 
-.about_member {
+.research_member_about {
   width: 80%;
   margin: auto;
 }
 
-.about_member dl,
+.research_member_about dl,
 .strategy_dl dl {
   text-align: justify;
   padding: 0 20px;
@@ -381,33 +380,33 @@ html, body {
   height: auto;
 }
 
-.part1_img {
+.picture_card {
   background-color: white;
   width: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   align-self: flex-start;
 }
 
-.part1_img img {
+.picture_card img {
   width: 98%;
 }
 
-.part2_1 .part1_img {
+.research_member .picture_card {
   width: 30%;
   box-shadow: none;
   background-color: inherit;
   align-self: center;
 }
 
-.part2_1 img {
+.research_member img {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.part1_img .img_p p,
-.member_pic .img_p p {
+.picture_card .card_content p,
+.member_pic .card_content p {
   text-align: center;
   text-indent: 0;
   padding: 20px;
@@ -433,16 +432,16 @@ html, body {
 }
 
 /* ------------------------------------------- */
-.myImg {
+.card_img {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.myImg:hover {
+.card_img:hover {
   opacity: 0.7;
 }
 
-.modal {
+.modal_card {
   display: none;
   position: fixed;
   z-index: 1;
@@ -455,7 +454,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.closex {
+.close_card_btn {
   position: absolute;
   right: 15%;
   top: 20px;
@@ -464,14 +463,14 @@ html, body {
   font-weight: bold;
 }
 
-.closex:hover,
-.closex:focus {
+.close_card_btn:hover,
+.close_card_btn:focus {
   color: #aaa;
   text-decoration: none;
   cursor: pointer;
 }
 
-.caption {
+.modal_content {
   margin: auto;
   display: block;
   width: 90%;
@@ -483,7 +482,7 @@ html, body {
   font-size: 1.5rem;
 }
 
-.modal-content {
+.modal_img {
   margin: auto;
   display: block;
   width: 90%;
@@ -886,7 +885,7 @@ textarea {
     flex-direction: column;
   }
 
-  .part2_1 .part1_img, .part1_img {
+  .research_member .picture_card, .picture_card {
     width: 80%;
     margin: auto;
   }
@@ -896,7 +895,7 @@ textarea {
     padding-bottom: 10px;
   }
 
-  .research_field .img_p p {
+  .research_field .card_content p {
     padding: 10px;
   }
 
