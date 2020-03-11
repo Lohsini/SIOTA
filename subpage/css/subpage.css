@@ -338,7 +338,7 @@ html, body {
   font-size: 1.5rem;
 }
 
-.research_field_li{
+.research_field_li {
   margin: 0 0 0 20%;
 }
 
@@ -411,29 +411,29 @@ html, body {
 }
 
 .picture_card .card_content p,
-.member_pic .card_content p {
+.member_card .member_content p {
   text-align: center;
   text-indent: 0;
   padding: 20px;
   width: 100%;
 }
 
-.member .other {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.member_card {
+  padding: 2rem;
 }
 
-.member img {
+.member_card img {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
 
-.member_pic {
-  padding: 2rem;
+.guest {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 /* ------------------------------------------- */
