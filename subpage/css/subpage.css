@@ -257,11 +257,6 @@ html, body {
   padding: 20px;
 }
 
-.fourthpart_p {
-  /* border-left: gray solid 3px; */
-  font-size: 1.5rem;
-}
-
 .contact_input {
   padding-top: 2.5vmin;
   text-align: center;
@@ -339,6 +334,14 @@ html, body {
   padding: 0 20px;
 }
 
+.fourthpart_title {
+  font-size: 1.5rem;
+}
+
+.research_field_li{
+  margin: 0 0 0 20%;
+}
+
 #p_center {
   width: fit-content;
 }
@@ -376,10 +379,6 @@ html, body {
   margin: auto;
 }
 
-.top_img {
-  height: auto;
-}
-
 .picture_card {
   background-color: white;
   width: 50%;
@@ -389,6 +388,12 @@ html, body {
 
 .picture_card img {
   width: 98%;
+}
+
+.picture_card_full {
+  display: block;
+  margin: auto;
+  max-width: 600px;
 }
 
 .research_member .picture_card {
@@ -486,7 +491,7 @@ html, body {
   margin: auto;
   display: block;
   width: 90%;
-  max-width: 1000px;
+  max-width: 800px;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
