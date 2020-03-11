@@ -512,19 +512,18 @@ html, body {
   margin: 30px 0;
   border-radius: 4px;
   width: 100%;
+  max-width: 800px;
 }
 
 .nthu_map iframe {
   border: none;
 }
 
-
 .target_list {
   text-align: left;
   display: table;
   width: 80%;
   margin: 0 auto;
-  /* padding-left: 55px; */
   list-style-position: inside;
 }
 
@@ -540,13 +539,13 @@ html, body {
   text-align: center;
 }
 
-#table_p {
+#plan_title {
   text-align: center;
   padding: 10px;
 }
 
 /* strategy */
-.tabs label {
+.strategy_area label {
   background-color: var(--second-color);
   border: solid white 1px;
   border-radius: 20px;
@@ -571,7 +570,7 @@ html, body {
   margin-right: 2%;
 }
 
-.tabs .content {
+.strategy_area .strategy_content {
   text-align: justify;
   height: 0;
   width: 80%;
@@ -582,18 +581,18 @@ html, body {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.tabs .content p {
+.strategy_area .strategy_content p {
   padding: 5px 0;
   text-indent: 0px;
 }
 
-.tabs input[type=checkbox]:checked+.content {
+.strategy_area input[type=checkbox]:checked+.strategy_content {
   background-color: var(--colorful-background);
   height: 100%;
   margin-bottom: 20px;
 }
 
-.tabs input[type=checkbox] {
+.strategy_area input[type=checkbox] {
   display: none;
 }
 
@@ -605,11 +604,11 @@ html, body {
   border-radius: 5px;
 }
 
-.but {
+.source_member_btn {
   display: inline;
 }
 
-.but button {
+.source_member_btn button {
   background-color: var(--main-color);
   padding: 1px 5px;
   border-radius: 2px;
@@ -620,7 +619,7 @@ html, body {
   font-size: 0.8rem;
 }
 
-.but button:hover {
+.source_member_btn button:hover {
   background-color: var(--hover-color);
   color: white;
   box-shadow: 0 0 5px 0 rgb(94, 94, 94);
@@ -662,12 +661,6 @@ html, body {
 
 textarea {
   min-height: 100px;
-}
-
-/* member table */
-.member table, .member td, .member th {
-  background-color: rgb(227, 230, 141);
-  border: solid black 1px;
 }
 
 /* news table */
@@ -877,7 +870,7 @@ textarea {
     font-size: 1.4rem;
   }
 
-  .tabs label {
+  .strategy_area label {
     font-size: 0.8rem;
   }
 
