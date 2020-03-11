@@ -1,44 +1,46 @@
-var img = document.getElementById("myImg1");
+var img = document.getElementById("card_img_status_1");
 img.onclick = function(){
-	var modal = document.getElementById("myModal1");
-	var modalImg = document.getElementById("img1");
-	var captionText = document.getElementById("caption1");
+	var modal = document.getElementById("modal_card_status_1");
+	var modalImg = document.getElementById("modal_img_status_1");
+	var captionText = document.getElementById("modal_content_status_1");
 	modal.style.display = "block";
 	modalImg.src = this.src;
 	captionText.innerHTML = this.alt;
 };
-var div = document.getElementsByClassName("closex")[0];
+var div = document.getElementsByClassName("close_card_btn")[0];
 div.onclick = function() {
-	var modal = document.getElementById("myModal1");
-  	modal.style.display = "none";
-};
-var img = document.getElementById("myImg3_1");
-img.onclick = function(){
-	var modal = document.getElementById("myModal3_1");
-	var modalImg = document.getElementById("img3_1");
-	var captionText = document.getElementById("caption3_1");
-	modal.style.display = "block";
-	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
-};
-var div = document.getElementsByClassName("closex")[1];
-div.onclick = function() {
-	var modal = document.getElementById("myModal3_1");
+	var modal = document.getElementById("modal_card_status_1");
   	modal.style.display = "none";
 };
 
 
-var img = document.getElementById("myImg3_2");
+var img = document.getElementById("card_img_performance_1");
 img.onclick = function(){
-	var modal = document.getElementById("myModal3_2");
-	var modalImg = document.getElementById("img3_2");
-	var captionText = document.getElementById("caption3_2");
+	var modal = document.getElementById("modal_card_performance_1");
+	var modalImg = document.getElementById("modal_img_performance_1");
+	var captionText = document.getElementById("modal_content_performance_1");
 	modal.style.display = "block";
 	modalImg.src = this.src;
 	captionText.innerHTML = this.alt;
 };
-var div = document.getElementsByClassName("closex")[2];
+var div = document.getElementsByClassName("close_card_btn")[1];
 div.onclick = function() {
-	var modal = document.getElementById("myModal3_2");
+	var modal = document.getElementById("modal_card_performance_1");
+  	modal.style.display = "none";
+};
+
+
+var img = document.getElementById("card_img_performance_2");
+img.onclick = function(){
+	var modal = document.getElementById("modal_card_performance_2");
+	var modalImg = document.getElementById("modal_img_performance_2");
+	var captionText = document.getElementById("modal_content_performance_2");
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+};
+var div = document.getElementsByClassName("close_card_btn")[2];
+div.onclick = function() {
+	var modal = document.getElementById("modal_card_performance_2");
   	modal.style.display = "none";
 };
