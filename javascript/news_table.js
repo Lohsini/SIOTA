@@ -13,9 +13,9 @@ function getNewses() {
 }
 
 function renderNews_page() {
-  var newsTable = document.getElementById("newsTable");
-  var newsTh = document.getElementById("newsTh");
-  newsTable.appendChild(newsTh);
+  var news_table = document.getElementById("news_table");
+  var news_th = document.getElementById("news_th");
+  news_table.appendChild(news_th);
 
   for (var i = 0; i < links.length; i++) {
     var newsTr = document.createElement("tr");
@@ -37,7 +37,7 @@ function renderNews_page() {
     newsTd_date.innerHTML = links[i].day;
     newsTr.appendChild(newsTd_date);
 
-    newsTable.appendChild(newsTr);
+    news_table.appendChild(newsTr);
   }
 
   function navigateToUrl(event) {
