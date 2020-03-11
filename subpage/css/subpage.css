@@ -514,14 +514,10 @@ html, body {
   width: 100%;
 }
 
-.nthumap iframe {
+.nthu_map iframe {
   border: none;
 }
 
-.not_real {
-  text-decoration: line-through;
-  color: rgb(200, 200, 200);
-}
 
 .target_list {
   text-align: left;
@@ -631,7 +627,7 @@ html, body {
 }
 
 /* contact */
-.contactus {
+.contact {
   width: 100%;
   padding: 60px 0;
   text-align: center;
@@ -639,24 +635,24 @@ html, body {
   color: var(--word-color);
 }
 
-.contactus h2 {
+.contact h2 {
   margin-bottom: 5vmin;
 }
 
-.inputgroup {
+.input_group {
   padding: 10px;
   margin: auto;
   display: flex;
   justify-content: space-between
 }
 
-.inputgroup label {
+.input_group label {
   margin: 0;
   width: 18%;
   text-align: left;
 }
 
-.inputgroup input, textarea {
+.input_group input, textarea {
   width: 80%;
   border-radius: 3px;
   padding-left: 10px;
