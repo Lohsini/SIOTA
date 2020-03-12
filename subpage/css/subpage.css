@@ -257,26 +257,7 @@ html, body {
   padding: 20px;
 }
 
-.contact_input {
-  padding-top: 2.5vmin;
-  text-align: center;
-}
 
-.contact_input input {
-  background-color: var(--main-color);
-  padding: 1.3vmin;
-  border-radius: 5px;
-  border: none;
-  border-style: hidden;
-  color: white;
-  transition-duration: 0.2s;
-}
-
-.contact_input input:hover {
-  background-color: var(--hover-color);
-  color: white;
-  box-shadow: 0 0 10px 0 rgb(94, 94, 94);
-}
 
 /* subpage_topic*/
 .subpage_topic {
@@ -626,7 +607,7 @@ html, body {
 }
 
 /* contact */
-.contact {
+.contact_area {
   width: 100%;
   padding: 60px 0;
   text-align: center;
@@ -634,8 +615,29 @@ html, body {
   color: var(--word-color);
 }
 
-.contact h2 {
+.contact_area h2 {
   margin-bottom: 5vmin;
+}
+
+.contact_btn {
+  padding-top: 2.5vmin;
+  text-align: center;
+}
+
+.contact_btn input {
+  background-color: var(--main-color);
+  padding: 1.3vmin;
+  border-radius: 5px;
+  border: none;
+  border-style: hidden;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.contact_btn input:hover {
+  background-color: var(--hover-color);
+  color: white;
+  box-shadow: 0 0 10px 0 rgb(94, 94, 94);
 }
 
 .input_group {
