@@ -13,8 +13,8 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("picture");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1};
+  if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
@@ -25,4 +25,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-setInterval(plusSlides, 3000, 1)
+setInterval(plusSlides, 3000, 1);
