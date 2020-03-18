@@ -117,26 +117,28 @@
     <div class="container">
       <h2 class="contentbox_title">聯絡我們</h2>
       <!-- <form action="./b.php" method="get" onsubmit="alart("表單輸出");"> -->
-      <div class="input_group">
-        <label for="">您的姓名</label>
-        <input type="text" name="name" placeholder="姓名 name">
-      </div>
-      <div class="input_group">
-        <label for="">您的電子信箱</label>
-        <input type="email" name="email" placeholder="電子信箱 email" required>
-      </div>
-      <div class="input_group">
-        <label for="">您的連絡電話</label>
-        <input type="text" name="phonenumber" placeholder="連絡電話 phone number">
-      </div>
-      <div class="input_group">
-        <label for="">您的意見內容</label>
-        <textarea name="message" placeholder="your message..."></textarea>
-      </div>
-      <div class="contact_btn">
-        <input type="button" name="submit" value="送出" id="window_alart">
-      </div>
-      <!-- </form> -->
+      <form>
+        <div class="input_group">
+          <label for="">您的姓名</label>
+          <input type="text" name="name" placeholder="姓名 name" required>
+        </div>
+        <div class="input_group">
+          <label for="">您的電子信箱</label>
+          <input type="email" name="email" placeholder="電子信箱 email" required>
+        </div>
+        <div class="input_group">
+          <label for="">您的連絡電話</label>
+          <input type="text" name="phonenumber" placeholder="連絡電話 phone number">
+        </div>
+        <div class="input_group">
+          <label for="">您的意見內容</label>
+          <textarea name="message" placeholder="your message..." required></textarea>
+        </div>
+        <div class="contact_btn">
+          <input type="button" name="submit" value="送出" id="window_alart">
+          <a href="mailto" id="mailto"></a>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -185,9 +187,10 @@
       </div>
     </div>
   </footer>
-  <script src="../javascript/window_alart.js"></script>
+  <script src="../javascript/window_alert.js"></script>
   <script src="../javascript/news.js"></script>
   <script src="../javascript/top.js"></script>
+  <script src="../javascript/mailto.js"></script>
 
   </script>
 
