@@ -21,41 +21,41 @@ array_push(
 	$newsList,
 	new News(
     "公告",
-		"https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=&id=0000576035_YEW194PQ2TJEYF6CHS4YR",
-		"【物聯網報報-DIGITIMES】區塊鏈金融卡上路！可支援150種數位與法定貨幣",
-		"2020-01-13")
+		"https://www.ithome.com.tw/news/134182",
+		"iThome／ AI趨勢周報第109期 ： 11公頃火龍果園靠AIoT和無人機來照顧，清大揭精準農業關鍵技術",
+		"2019.11.14")
 );
 array_push(
 	$newsList,
 	new News(
     "公告",
-		"https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=&id=0000575564_HYS6IUTU5S0KYJ5N5WVMT",
-		"【物聯網報報-DIGITIMES】5家西班牙銀行聯合運用智慧合約進行跨行支付作業測試",
-		"2020-01-10")
+		"https://www.agriharvest.tw/?p=6243",
+		"農傳媒／翱翔農業－「無人機於智慧農業應用研討會」紀要",
+		"2019.11.13")
 );
 array_push(
 	$newsList,
 	new News(
     "公告",
-		"https://technews.tw/2020/01/04/sky-shepherds-the-farmers-using-drones-to-watch-their-flocks-by-flight/",
-		"【物聯網報報-科技新報】無人機牧羊、AI 養豬，可能就是農業的未來",
-		"2020-01-08")
+		"https://udn.com/news/story/7266/4157737",
+		"智高點／農業智慧大應用 區塊鏈查產銷履歷",
+		"2019.11.11")
 );
 array_push(
 	$newsList,
 	new News(
     "公告",
-		"https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=&id=0000575940_EN48IKJI5D0EIULK4K8XU",
-		"【物聯網報報-DIGITIMES】AI、區塊鏈和邊緣運算在工業4.0中的關鍵作用",
-		"2020-01-06")
+		"https://www.ithome.com.tw/news/134138",
+		"iThome／11公頃火龍果園靠AIoT和無人機來照顧，清大揭精準農業關鍵技術",
+		"2019.11.11")
 );
 array_push(
 	$newsList,
 	new News(
     "公告",
-		"https://city.gvm.com.tw/article.html?id=70544&utm_source=edm&utm_medium=email&utm_campaign=daily&utm_content=city_post",
-		"【物聯網報報-城市學】5G釋照標破天價！前中華電信董事長呂學錦告訴你為什麼",
-		"2019-12-31")
+		"https://anntw.com/articles/20191111-XMiZ",
+		"台灣醒報／農業智慧大應用 區塊鏈查產銷履歷",
+		"2019.11.11")
 );
 
 echo json_encode($newsList);
