@@ -9,7 +9,7 @@ function sendEmail() {
     "連絡電話：%0a" + number + "%0a%0d" +
     "意見內容：%0a" + message + "%0a%0d"+
     "謝謝" + "%0a%0d";
-  $("#mailto").attr("href", "mailto:Lohi3152@gmail.com?body=" +
+  $("#mailto").attr("href", "mailto:Lohi3152@gmail.com?subject=SIoTA智慧物聯網與科技藝術應用研究中心 使用者意見回饋&body=" +
     body);
     document.getElementById("mailto").click();
 }
