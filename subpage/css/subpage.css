@@ -354,10 +354,11 @@ html, body {
 
 /* subpage_topic img */
 .topic_img {
-  width: 100%;
+  width: 80%;
   border-radius: 4px;
   display: block;
   margin: auto;
+  max-width: 800px;
 }
 
 .picture_card {
@@ -492,7 +493,7 @@ html, body {
 .about img {
   margin: 30px 0;
   border-radius: 4px;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
 }
 
