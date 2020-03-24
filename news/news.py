@@ -22,10 +22,10 @@ for n in searchResult["items"]:
     num = num+1
     # print("這是第" + str(num) + "則新聞，新聞標題：『" + title + "』，網址：" + link)
     result = News(title, href)
-    print("這是第" + str(num) + "則新聞，類型是"+result.type +"，新聞標題：『" + result.title + "』，網址：" + result.href)
-    # array.append({type: result.type, title: result.title, link: result.link})
+    # print("這是第" + str(num) + "則新聞，類型是"+result.type +"，新聞標題：『" + result.title + "』，網址：" + result.href)
     array.append(result)
-print(array)
+    # array.append({type: result.type, title: result.title, link: result.link})
+# print(array)
 
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -34,7 +34,7 @@ class MyEncoder(json.JSONEncoder):
 
         return obj.__dict__
 
-print (json.dumps(array, cls = MyEncoder))
+# print (json.dumps(array, cls = MyEncoder))
 
 f = open("news_data.txt", "w")
 f.write(json.dumps(array, cls = MyEncoder))
