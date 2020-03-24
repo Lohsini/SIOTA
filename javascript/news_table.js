@@ -21,7 +21,7 @@ function renderNews_page() {
     var newsTr = document.createElement("tr");
     // newsTr.setAttribute("onclick","location.href='"+links[i].href+"'");
 
-    newsTr.href = links[i].href;
+    newsTr.href = links[i].link;
     newsTr.addEventListener("click", navigateToUrl, false);
 
     var newsTd_type = document.createElement("td");
@@ -42,7 +42,7 @@ function renderNews_page() {
 
   function navigateToUrl(event) {
     // 參考：https://stackoverflow.com/questions/1226714/how-to-get-the-browser-to-navigate-to-url-in-javascript
-    window.location.href = event.currentTarget.href;
+    window.location.href = event.currentTarget.link;
   }
 }
 function renderNews() {
@@ -56,7 +56,7 @@ function renderNews() {
     newsWrapper.appendChild(newsicon);
 
     var newstitle = document.createElement("a");
-    newstitle.setAttribute("href", links[i].href);
+    newstitle.setAttribute("href", links[i].link);
     newstitle.innerHTML = links[i].title;
     newsWrapper.appendChild(newstitle);
 
