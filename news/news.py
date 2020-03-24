@@ -12,17 +12,17 @@ searchResult = json.loads(res.text)
 num = 0
 array = []
 class News:
-    def __init__(self, title, link):
+    def __init__(self, title, href):
         self.type = "公告"
         self.title = title
-        self.link = link
+        self.href = href
 for n in searchResult["items"]:
     title = n["title"]
-    link = n["link"]
+    href = n["link"]
     num = num+1
     # print("這是第" + str(num) + "則新聞，新聞標題：『" + title + "』，網址：" + link)
-    result = News(title, link)
-    print("這是第" + str(num) + "則新聞，類型是"+result.type +"，新聞標題：『" + result.title + "』，網址：" + result.link)
+    result = News(title, href)
+    print("這是第" + str(num) + "則新聞，類型是"+result.type +"，新聞標題：『" + result.title + "』，網址：" + result.href)
     # array.append({type: result.type, title: result.title, link: result.link})
     array.append(result)
 print(array)
