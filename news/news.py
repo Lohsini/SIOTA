@@ -4,7 +4,7 @@ import json
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
 searchId = "010230242516722102980:n0ssdaoccan"
-query = "黃能富 農業"
+query = "中國 肺炎 確診 陳時中"
 
 res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 searchResult = json.loads(res.text)
