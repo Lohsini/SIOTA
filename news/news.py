@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
@@ -16,6 +17,7 @@ class News:
         self.type = "公告"
         self.title = title
         self.href = href
+        self.day = time.time()
 for n in searchResult["items"]:
     title = n["title"]
     href = n["link"]
