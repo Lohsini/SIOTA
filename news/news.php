@@ -48,6 +48,11 @@ else {
   fclose($data);
 }
 
+echo "這是外面//";
+$data = fopen($datafile, "r") or die("Unable to open file!");
+echo fread($data,filesize($datafile));
+fclose($data);
+
 // if (!file_exists($datafile)) {
 
 //   exec("python3 news.py");
