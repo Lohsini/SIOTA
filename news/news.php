@@ -9,10 +9,10 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-echo "這是if之外//";
-
 if ($now - $last > 60) {
   echo "這是if裡面//";
+  exec("python3 news.py");
+  echo "已啟用python//";
 
   if (!file_exists($datafile)) {
     echo "如果時間超過且檔案不在，就執行原有的//";
