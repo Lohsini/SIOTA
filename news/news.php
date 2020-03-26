@@ -14,8 +14,8 @@ if ($now - $last > 10) {
   fwrite($file,$now);
   fclose($file);
   exec("python3 news.py");
-
-  $filename = "news_data.txt";
+  echo "已經過了執行python那行程式";
+  // $filename = "news_data.txt";
 
   // if (!file_exists($filename)) {
   //   exec("python3 news.py");
@@ -32,9 +32,9 @@ if ($now - $last > 10) {
   //   exit(1);
   // }
 
-  $myfile = fopen($filename, "r") or die("Unable to open file!");
-  echo fread($myfile,filesize($filename));
-  fclose($myfile);
+  // $myfile = fopen($filename, "r") or die("Unable to open file!");
+  // echo fread($myfile,filesize($filename));
+  // fclose($myfile);
 }
 // else {
 //  echo "目前狀態：尚未更新";
