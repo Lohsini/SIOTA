@@ -32,8 +32,9 @@ if ($now - $last > 60) {
     // 2.啟用python-會建立新的data
     exec("python3 news.py");
     echo "已啟用python";
+    sleep(3);
     // 3.讀取新data資料
-    echo "這是在if裡面抓到新的data後面就是新的";
+    echo "睡了3秒有抓到嗎？";
     $data = fopen($datafile, "r") or die("Unable to open file!");
     echo fread($data,filesize($datafile));
     fclose($data);
