@@ -9,40 +9,40 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-echo "這是if之外";
+echo "這是if之外//";
 
 if ($now - $last > 60) {
   $timestamp = fopen($timestampfile,"w+");
   fwrite($timestamp,$now);
   fclose($timestamp);
 
-  echo "這是if裡面且表示時間標已經換好了";
+  echo "這是if裡面且表示時間標已經換好了//";
   // 如果時間超過且檔案不在，就執行原有的
   if (!file_exists($datafile)) {
-    echo "如果時間超過且檔案不在";
+    echo "如果時間超過且檔案不在//";
     $data = fopen($datafile, "r") or die("Unable to open file!");
     echo fread($data,filesize($datafile));
     fclose($data);
   }
   else{
     // 1.刪除data
-    echo "如果時間超過且檔案在就把他刪除";
+    echo "如果時間超過且檔案在就把他刪除//";
     unlink($datafile);
-    echo "已刪除完成";
+    echo "已刪除完成//";
     // 2.啟用python-會建立新的data
     exec("python3 news.py");
-    echo "已啟用python";
+    echo "已啟用python//";
     sleep(3);
     // 3.讀取新data資料
-    echo "睡了3秒有抓到嗎？";
-    $data = fopen($datafile, "r") or die("Unable to open file!");
+    echo "睡了3秒有抓到嗎？//";
+    $data = fopen($datafile, "r") or die("Unable to open file!可惡//");
     echo fread($data,filesize($datafile));
     fclose($data);
   }
 }
 else {
   // 如果時間沒超過，就執行原有的
-  echo "這是else裡面且後面緊接著data";
+  echo "這是else裡面且後面緊接著data//";
   $data = fopen($datafile, "r") or die("Unable to open file!");
   echo fread($data,filesize($datafile));
   fclose($data);
