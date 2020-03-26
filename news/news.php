@@ -19,9 +19,9 @@ if ($now - $last > 60) {
   fclose($timestamp);
   echo "新檔案ok時間標已經換好了//";
 
-  $data = fopen($datafile, "r") or die("Unable to open file!");
-  echo fread($data,filesize($datafile));
-  fclose($data);
+  // $data = fopen($datafile, "r") or die("Unable to open file!");
+  // echo fread($data,filesize($datafile));
+  // fclose($data);
 
 //   if (!file_exists($datafile)) {
 //     echo "如果時間超過且檔案不在，就執行原有的//";
