@@ -14,6 +14,11 @@ if ($now - $last > 60) {
   exec("python3 news.py");
   echo "已啟用python//";
 
+  $timestamp = fopen($timestampfile,"w+");
+  fwrite($timestamp,$now);
+  fclose($timestamp);
+  echo "新檔案ok時間標已經換好了//";
+
 //   if (!file_exists($datafile)) {
 //     echo "如果時間超過且檔案不在，就執行原有的//";
 //     $data = fopen($datafile, "r") or die("Unable to open file!");
@@ -52,10 +57,12 @@ if ($now - $last > 60) {
 //   fclose($data);
 // }
 
-echo "這是外面//";
-$data = fopen($datafile, "r") or die("Unable to open file!");
-echo fread($data,filesize($datafile));
-fclose($data);
+else {
+  echo "這是else裡面//";
+  $data = fopen($datafile, "r") or die("Unable to open file!");
+  echo fread($data,filesize($datafile));
+  fclose($data);
+}
 
 // if (!file_exists($datafile)) {
 
