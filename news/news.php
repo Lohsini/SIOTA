@@ -14,7 +14,6 @@ if ($now - $last > 10) {
   fwrite($file,$now);
   fclose($file);
   exec("python3 news.py");
-  echo "已經過了執行python那行程式";
   $filename = "news_data.txt";
 
   // if (!file_exists($filename)) {
