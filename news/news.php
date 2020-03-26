@@ -32,9 +32,9 @@ if ($now - $last > 10) {
   //   exit(1);
   // }
 
-  $myfile = fopen($filename, "r") or die("Unable to open file!");
-  echo fread($myfile,filesize($filename));
-  fclose($myfile);
+  // $myfile = fopen($filename, "r") or die("Unable to open file!");
+  // echo fread($myfile,filesize($filename));
+  // fclose($myfile);
 }
 // else {
 //  echo "目前狀態：尚未更新";
