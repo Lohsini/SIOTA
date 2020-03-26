@@ -14,35 +14,35 @@ if ($now - $last > 60) {
   exec("python3 news.py");
   echo "已啟用python//";
 
-  if (!file_exists($datafile)) {
-    echo "如果時間超過且檔案不在，就執行原有的//";
-    $data = fopen($datafile, "r") or die("Unable to open file!");
-    echo fread($data,filesize($datafile));
-    fclose($data);
-  }
-  else{
-    echo "如果時間超過且檔案在就把他刪除//";
-    // 1.刪除data
-    unlink($datafile);
-    echo "已刪除完成//";
-
-    // 2.啟用python-會建立新的data
-    exec("python3 news.py");
-    echo "已啟用python//";
-
-    // 3.讀取新data資料
-    sleep(3);
-    echo "睡了3秒有抓到嗎？//";
-
-    $data = fopen($datafile, "r") or die("Unable to open file!可惡//");
-    echo fread($data,filesize($datafile));
-    fclose($data);
-
-    $timestamp = fopen($timestampfile,"w+");
-    fwrite($timestamp,$now);
-    fclose($timestamp);
-    echo "新檔案ok時間標已經換好了//";
-  }
+//   if (!file_exists($datafile)) {
+//     echo "如果時間超過且檔案不在，就執行原有的//";
+//     $data = fopen($datafile, "r") or die("Unable to open file!");
+//     echo fread($data,filesize($datafile));
+//     fclose($data);
+//   }
+//   else{
+//     echo "如果時間超過且檔案在就把他刪除//";
+//     // 1.刪除data
+//     unlink($datafile);
+//     echo "已刪除完成//";
+//
+//     // 2.啟用python-會建立新的data
+//     exec("python3 news.py");
+//     echo "已啟用python建立新的data//";
+//
+//     // 3.讀取新data資料
+//     sleep(10);
+//     echo "睡了10秒有抓到嗎？//";
+//
+//     $data = fopen($datafile, "r") or die("Unable to open file!可惡//");
+//     echo fread($data,filesize($datafile));
+//     fclose($data);
+//
+//     $timestamp = fopen($timestampfile,"w+");
+//     fwrite($timestamp,$now);
+//     fclose($timestamp);
+//     echo "新檔案ok時間標已經換好了//";
+//   }
 }
 // else {
 //   // 如果時間沒超過，就執行原有的
