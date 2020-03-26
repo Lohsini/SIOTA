@@ -15,6 +15,8 @@ if ($now - $last > 60) {
   fclose($file);
   exec("python3 news.py");
   echo "大於60秒才可以看到這行程式";
+}
+
   $filename = "news_data.txt";
 
   // if (!file_exists($filename)) {
@@ -32,10 +34,10 @@ if ($now - $last > 60) {
   //   exit(1);
   // }
 
-  $myfile = fopen($filename, "r") or die("Unable to open file!");
-  echo fread($myfile,filesize($filename));
-  fclose($myfile);
-}
+$myfile = fopen($filename, "r") or die("Unable to open file!");
+echo fread($myfile,filesize($filename));
+fclose($myfile);
+
 // else {
 //  echo "目前狀態：尚未更新";
 // }
