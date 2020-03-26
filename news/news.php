@@ -40,13 +40,13 @@ if ($now - $last > 60) {
     fclose($data);
   }
 }
-else {
-  // 如果時間沒超過，就執行原有的
-  echo "這是else裡面且後面緊接著data//";
-  $data = fopen($datafile, "r") or die("Unable to open file!");
-  echo fread($data,filesize($datafile));
-  fclose($data);
-}
+// else {
+//   // 如果時間沒超過，就執行原有的
+//   echo "這是else裡面且後面緊接著data//";
+//   $data = fopen($datafile, "r") or die("Unable to open file!");
+//   echo fread($data,filesize($datafile));
+//   fclose($data);
+// }
 
 echo "這是外面//";
 $data = fopen($datafile, "r") or die("Unable to open file!");
