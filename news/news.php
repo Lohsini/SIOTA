@@ -13,13 +13,13 @@ if ($now - $last > 10) {
   $file = fopen("timestamp.txt","w+");
   fwrite($file,$now);
   fclose($file);
-  // exec("python3 news.py");
+  exec("python3 news.py");
 
   $filename = "news_data.txt";
 
-  if (!file_exists($filename)) {
-    exec("python3 news.py");
-  }
+  // if (!file_exists($filename)) {
+  //   exec("python3 news.py");
+  // }
 
   // $countDown = 10;
   // while(!file_exists($filename) && $countDown >= 0) {
