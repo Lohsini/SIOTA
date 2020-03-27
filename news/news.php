@@ -14,7 +14,6 @@ $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
 
-//
 // if ($now - $last > 60) {
 //   echo "這是if裡面//";
 //   exec("python3 news.py");
@@ -73,6 +72,15 @@ fclose($data);
 //   echo fread($data,filesize($datafile));
 //   fclose($data);
 // }
+?>
+
+
+
+
+
+
+
+
 
 // if (!file_exists($datafile)) {
 
@@ -89,4 +97,3 @@ fclose($data);
 //   echo "[error]";
 //   exit(1);
 // }
-?>
