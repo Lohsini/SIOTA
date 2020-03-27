@@ -10,9 +10,9 @@ $last = fread($timestamp,"100");
 fclose($timestamp);
 
 exec("python3 test.py");
-// $data = fopen($datafile, "r") or die("Unable to open file!");
-// echo fread($data,filesize($datafile));
-// fclose($data);
+$data = fopen($datafile, "r") or die("Unable to open file!");
+echo fread($data,filesize($datafile));
+fclose($data);
 
 // if ($now - $last > 60) {
 //   echo "這是if裡面//";
