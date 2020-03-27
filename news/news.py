@@ -5,7 +5,7 @@ import time
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
 searchId = "010230242516722102980:n0ssdaoccan"
-query = "劉真 心臟"
+query = "english usa"
 
 res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 searchResult = json.loads(res.text)
@@ -13,7 +13,7 @@ searchResult = json.loads(res.text)
 array = []
 class News:
     def __init__(self, title, href):
-        self.type = "公告"
+        self.type = "hello"
         self.title = title
         self.href = href
         self.day = time.time()
