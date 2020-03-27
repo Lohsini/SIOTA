@@ -1,4 +1,4 @@
-# import requests
+import requests
 # import json
 import time
 
@@ -8,8 +8,8 @@ searchId = "010230242516722102980:n0ssdaoccan"
 query = "english usa"
 #
 #
-res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
-# res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
+# res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
+res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
 
