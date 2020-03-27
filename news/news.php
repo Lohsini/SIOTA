@@ -9,7 +9,7 @@ $datafile = "news_data.txt";
 // $last = fread($timestamp,"100");
 // fclose($timestamp);
 
-// exec("python3 news.py");
+exec("python3 news.py");
 $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
