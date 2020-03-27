@@ -13,5 +13,5 @@ searchResult = json.loads(res.text)
 
 
 f = open("data.txt", "w")
-f.write(str(searchResult))
+f.write(str(res))
 f.close()
