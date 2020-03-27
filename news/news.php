@@ -2,14 +2,14 @@
 header("Access-Control-Allow-Origin: *");
 
 $datafile = "news_data.txt";
-$timestampfile = "timestamp.txt";
-$now = time();
+// $timestampfile = "timestamp.txt";
+// $now = time();
 
-$timestamp = fopen($timestampfile,"r+");
-$last = fread($timestamp,"100");
-fclose($timestamp);
+// $timestamp = fopen($timestampfile,"r+");
+// $last = fread($timestamp,"100");
+// fclose($timestamp);
 
-exec("python3 news.py");
+// exec("python3 news.py");
 $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
