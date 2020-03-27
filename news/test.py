@@ -5,15 +5,15 @@ import time
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
 searchId = "010230242516722102980:n0ssdaoccan"
-query = "肺炎 確診"
+query = "english usa"
 #
 #
-# res = api + "?key=" + key + "&cx=" + searchId + "&q="
+res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
 # res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
-b="你可以看看"
+
 
 f = open("data.txt", "w")
-f.write(str(b))
+f.write(str(res))
 f.close()

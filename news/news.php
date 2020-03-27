@@ -5,9 +5,9 @@ header("Access-Control-Allow-Origin: *");
 
 // $now = time();
 echo "啟動前等10秒".time();
-exec("python3 news.py");
+exec("python3 test.py");
 // sleep(10);
-$datafile = "news_data.txt";
+$datafile = "data.txt";
 // echo "十秒後".time();
 
 // $timestampfile = "timestamp.txt";
