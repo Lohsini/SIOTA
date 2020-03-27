@@ -10,6 +10,8 @@ $datafile = "news_data.txt";
 // fclose($timestamp);
 
 exec("python3 news.py");
+sleep(10);
+
 $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
