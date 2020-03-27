@@ -8,7 +8,7 @@ echo "啟動前等10秒".$now;
 exec("python3 test.py");
 sleep(10);
 $datafile = "news_data.txt";
-echo("十秒後".$now);
+echo "十秒後".$now;
 
 // $timestampfile = "timestamp.txt";
 
