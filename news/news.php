@@ -1,12 +1,20 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-$now = time();
-echo "啟動前等10秒".$now;
-exec("python3 test.py");
+echo date('h:i:s') . "<br />";
+
 sleep(10);
-$datafile = "news_data.txt";
-exec("十秒後".$now);
+
+echo date('h:i:s');
+
+
+// $now = time();
+// echo "啟動前等10秒".$now;
+// exec("python3 test.py");
+// sleep(10);
+// $datafile = "news_data.txt";
+// exec("十秒後".$now);
+
 // $timestampfile = "timestamp.txt";
 
 // $timestamp = fopen($timestampfile,"r+");
@@ -14,9 +22,9 @@ exec("十秒後".$now);
 // fclose($timestamp);
 
 
-$data = fopen($datafile, "r") or die("Unable to open file!");
-echo fread($data,filesize($datafile));
-fclose($data);
+// $data = fopen($datafile, "r") or die("Unable to open file!");
+// echo fread($data,filesize($datafile));
+// fclose($data);
 
 // if ($now - $last > 60) {
 //   echo "這是if裡面//";
