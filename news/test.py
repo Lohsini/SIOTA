@@ -12,8 +12,8 @@ query = "肺炎 確診"
 # res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
-b="asdasdasd"
+b="asdasdasd"+api+key
 
 f = open("data.txt", "w")
-f.write(str(api))
+f.write(str(b))
 f.close()
