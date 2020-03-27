@@ -12,7 +12,7 @@ res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
 # res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
-b=api +"asdasdasd"+api+ "&cx="+key
+b=api +"你可以看看"+api+ "&cx="+key
 
 f = open("data.txt", "w")
 f.write(str(b))
