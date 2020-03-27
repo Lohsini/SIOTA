@@ -8,12 +8,12 @@ searchId = "010230242516722102980:n0ssdaoccan"
 query = "肺炎 確診"
 #
 #
-res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
+# res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
 # res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
 b="asdasdasd"
 
 f = open("data.txt", "w")
-f.write(str(res))
+f.write(str(api))
 f.close()
