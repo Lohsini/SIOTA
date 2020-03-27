@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-$datafile = "news_data.txt";
+$datafile = "data.txt";
 $timestampfile = "timestamp.txt";
 $now = time();
 
@@ -9,7 +9,7 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-exec("python3 news.py");
+exec("python3 test.py");
 $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
@@ -74,26 +74,18 @@ fclose($data);
 // }
 ?>
 
+<!-- if (!file_exists($datafile)) {
 
+ exec("python3 news.py");
+}
 
+$countDown = 10;
+while(!file_exists($datafile) && $countDown >= 0) {
+ sleep(3);
+ $countDown -= 1;
+}
 
-
-
-
-
-
-// if (!file_exists($datafile)) {
-
-//   exec("python3 news.py");
-// }
-
-// $countDown = 10;
-// while(!file_exists($datafile) && $countDown >= 0) {
-//   sleep(3);
-//   $countDown -= 1;
-// }
-
-// if ($countDown < 0) {
-//   echo "[error]";
-//   exit(1);
-// }
+if ($countDown < 0) {
+ echo "[error]";
+ exit(1);
+} -->
