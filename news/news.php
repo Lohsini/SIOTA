@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 
-$datafile = "data.txt";
+$datafile = "news_data.txt";
 $timestampfile = "timestamp.txt";
 $now = time();
 
@@ -9,7 +9,7 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-exec("python3 test.py");
+exec("python3 news.py");
 $data = fopen($datafile, "r") or die("Unable to open file!");
 echo fread($data,filesize($datafile));
 fclose($data);
