@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function getNewses() {
-	$.ajax({url: "https://siota.herokuapp.com/news/news.php",
+	$.ajax({url: "https://siota.herokuapp.com/news/getNews.php",
 		success: function(result) {
 	    	links = JSON.parse(result);
 	    	renderNews_page();
