@@ -6,7 +6,7 @@ header("Access-Control-Allow-Origin: *");
 // $now = time();
 echo "啟動前等10秒".time();
 exec("python3 test.py");
-sleep(10);
+// sleep(10);
 $datafile = "data.txt";
 echo "十秒後".time();
 
