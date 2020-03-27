@@ -12,8 +12,8 @@ res = api + "?key=" + key + "&cx=" + searchId + "&q=" + query
 # res = requests.get(api + "?key=" + key + "&cx=" + searchId + "&q=" + query)
 # searchResult = json.loads(res.text)
 
-b="asdasdasd"+api+key
+b=api +"asdasdasd"+api+ "&cx="+key
 
 f = open("data.txt", "w")
-f.write(str(res))
+f.write(str(b))
 f.close()
