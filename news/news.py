@@ -4,6 +4,10 @@ import time # 內建的
 
 # 這邊沒有執行到, 真的是import的問題!
 
+f = open("news_data.txt", "w")
+f.write("hello world")
+f.close()
+
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
 searchId = "010230242516722102980:n0ssdaoccan"

@@ -1,1 +1,1 @@
-requests==2.23.0
+git+git://github.com/psf/requests.git
