@@ -1,11 +1,13 @@
+# 這邊有執行到
+import requests
+import json
+import time
+
 # 測試import功能
 f = open("news_data.txt", "w")
 f.write("hello world")
 f.close()
 
-import requests
-import json
-import time
 
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
