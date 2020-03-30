@@ -1,3 +1,8 @@
+# 測試import功能
+f = open("news_data.txt", "w")
+f.write("hello world")
+f.close()
+
 import requests
 import json
 import time
