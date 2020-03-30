@@ -1,13 +1,8 @@
-# 這邊有執行到
 import requests
-import json
-import time
+import json # 內建的
+import time # 內建的
 
-# 測試import功能
-f = open("news_data.txt", "w")
-f.write("hello world")
-f.close()
-
+# 這邊沒有執行到, 真的是import的問題!
 
 api = "https://www.googleapis.com/customsearch/v1"
 key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs"
