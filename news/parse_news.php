@@ -22,7 +22,7 @@ function get_news(){
   $searchId = "010230242516722102980:n0ssdaoccan";
   $query = "肺炎%20確診";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
-  echo $url . "\n";
+  // echo $url . "\n";
 
   // 這個相當於python的requests.get(url)
   $result = file_get_contents($url);
