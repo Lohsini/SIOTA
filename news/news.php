@@ -12,7 +12,7 @@ fclose($timestamp);
 
 // 下面這一塊換成php的code
 get_news()
-// 
+//
 // $data = fopen($datafile, "r") or die("Unable to open file!");
 // echo fread($data,filesize($datafile));
 // fclose($data);
@@ -24,16 +24,16 @@ get_news()
 
 // 剩下的就是要用爬蟲來讀result_json, 取出你要的資訊, 存到你自己的class <- 上網查
 
-
-if ($now - $last > 60) {
-  exec("php parse_news.php");
-  echo "已啟用parse_news.php//";
-
-  $timestamp = fopen($timestampfile,"w+");
-  fwrite($timestamp,$now);
-  fclose($timestamp);
-  echo "新檔案ok時間標已經換好了//";
-
+//
+// if ($now - $last > 60) {
+//   exec("php parse_news.php");
+//   echo "已啟用parse_news.php//";
+//
+//   $timestamp = fopen($timestampfile,"w+");
+//   fwrite($timestamp,$now);
+//   fclose($timestamp);
+//   echo "新檔案ok時間標已經換好了//";
+//
 
 //   if (!file_exists($datafile)) {
 //     echo "如果時間超過且檔案不在，就執行原有的//";
@@ -54,7 +54,7 @@ if ($now - $last > 60) {
 //   exec("php parse_news.php");
 // }
 
-else {
-  exec("php parse_news.php");
-}
+// else {
+//   exec("php parse_news.php");
+// }
 ?>
