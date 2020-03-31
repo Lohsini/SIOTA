@@ -38,7 +38,12 @@ function get_news(){
     $news_list[] = $incoming_news; // python的array.append()
   }
 // 有點像print的功能 把結果印出來
-var_dump($news_list);
+// var_dump($news_list);
+//
+// // 寫檔案
+// $data = fopen($datafile, "r") or die("Unable to open file!");
+// echo fread($data,filesize($datafile));
+// fclose($data);
 }
 
 ?>
