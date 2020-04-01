@@ -38,8 +38,8 @@ if ($now - $last > 60) {
 }
 
 else {
-  $hey = fopen($datafile, "r") or die("Unable to open file!");
-  echo fread($hey,filesize($datafile));
-  fclose($hey);
+  $data = fopen($datafile, "r") or die("Unable to open file!");
+  echo fread($data,filesize($datafile));
+  fclose($data);
 }
 ?>
