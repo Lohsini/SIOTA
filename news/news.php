@@ -10,20 +10,16 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-get_news()
 
-$data = fopen($datafile, "r") or die("Unable to open file!");
-echo fread($data,filesize($datafile));
-fclose($data);
 
-// if ($now - $last > 60) {
-//   get_news()
-//   // echo "已啟用parse_news";
-//
-//   $timestamp = fopen($timestampfile,"w+");
-//   fwrite($timestamp,$now);
-//   fclose($timestamp);
-//   // echo "新檔案ok時間標已經換好了";
+if ($now - $last > 60) {
+  get_news();
+  echo "已過了60秒";
+
+  $timestamp = fopen($timestampfile,"w+");
+  fwrite($timestamp,$now);
+  fclose($timestamp);
+  // echo "新檔案ok時間標已經換好了";
 
 //   if (!file_exists($datafile)) {
 //     echo "如果時間超過且檔案不在，就執行原有的//";
@@ -42,11 +38,11 @@ fclose($data);
 // else {
 //   // 如果時間沒超過，就執行原有的
 //   exec("php parse_news.php");
-// }
+}
 
-// else {
-//   $data = fopen($datafile, "r") or die("Unable to open file!");
-//   echo fread($data,filesize($datafile));
-//   fclose($data);
-// }
+else {
+  $hey = fopen($datafile, "r") or die("Unable to open file!");
+  echo fread($hey,filesize($datafile));
+  fclose($hey);
+}
 ?>

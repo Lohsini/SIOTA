@@ -39,6 +39,7 @@ function get_news(){
   }
   // 有點像print的功能 把結果印出來
   $json_result = json_encode($news_list);
+  // $json_result = "1231231213";
   echo $json_result;
 
   // // 寫檔案
