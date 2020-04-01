@@ -20,7 +20,7 @@ function get_news(){
   $api = "https://www.googleapis.com/customsearch/v1";
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
-  $query = "肺炎%20確診";
+  $query = "美國%20死亡";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
   // echo $url . "\n";
 
@@ -38,8 +38,8 @@ function get_news(){
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 有點像print的功能 把結果印出來
-  $json_result = json_encode($news_list);
-  // $json_result = "1231231213";
+  // $json_result = json_encode($news_list);
+  $json_result = time();
   echo $json_result;
 
   // // 寫檔案
