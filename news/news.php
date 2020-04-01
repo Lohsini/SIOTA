@@ -10,11 +10,8 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-
-
 if ($now - $last > 60) {
   get_news();
-  echo "已過了60秒";
 
   $timestamp = fopen($timestampfile,"w+");
   fwrite($timestamp,$now);

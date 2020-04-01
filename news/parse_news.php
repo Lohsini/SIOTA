@@ -38,8 +38,7 @@ function get_news(){
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 有點像print的功能 把結果印出來
-  // $json_result = json_encode($news_list);
-  $json_result = time();
+  $json_result = json_encode($news_list);
   echo $json_result;
 
   // // 寫檔案
