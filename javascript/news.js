@@ -29,7 +29,7 @@ function renderNews() {
 
 
     var newsdate = document.createElement("p");
-    newsdate.innerHTML = links[i].day;
+    newsdate.innerHTML = links[i].date;
     newsWrapper.appendChild(newsdate);
 
 
