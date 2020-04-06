@@ -20,7 +20,8 @@ function get_news(){
   $api = "https://www.googleapis.com/customsearch/v1/siterestrict";
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
-  $query = "黃能富%20農業%20清華大學%20科技";
+  $query = "陳時中%20確診%20肺炎";
+  // $query = "黃能富%20農業%20清華大學%20科技";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
   // echo $url . "\n";
 
@@ -42,10 +43,6 @@ function get_news(){
     $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
 
     $incoming_news = new News($new_title, $new_link, $new_date);
-
-    // $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $new_date);
-
-
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 把結果印出來
