@@ -17,7 +17,7 @@ for ($i=0; $i < count($res_json->{'items'}); $i++) {
   $number = strpos($snippet,"...");
   $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
   echo $new_date;
-  // $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $res_json->{'items'}[$i]->{'snippet'});
+  $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $res_json->{'items'}[$i]->{'snippet'});
 
   // $news_list[] = $incoming_news; // python的array.append()
 }

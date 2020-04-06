@@ -34,12 +34,16 @@ function get_news(){
   $news_list = [];
 
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
+    $new_title = $res_json->{'items'}[$i]->{'title'};
+    $new_link = $res_json->{'items'}[$i]->{'link'};
+
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
     $number = strpos($snippet,"...");
     $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
 
-    $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $new_date);
+    $incoming_news = new News($new_title, $new_link, $new_date);
 
+    // $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $new_date);
 
 
     $news_list[] = $incoming_news; // python的array.append()
