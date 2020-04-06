@@ -34,11 +34,11 @@ function get_news(){
   $news_list = [];
 
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
-    $snippet= $res_json->{'items'}[$i]->{'snippet'};
+    // $snippet= $res_json->{'items'}[$i]->{'snippet'};
     // $number = strpos($snippet,"...");
     // $new_date = mb_substr($snippet, 0, $number-1, "utf-8");
 
-    $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $snippet);
+    $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $res_json->{'items'}[$i]->{'snippet'});
 
 
 
