@@ -20,7 +20,7 @@ function get_news(){
   $api = "https://www.googleapis.com/customsearch/v1";
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
-  $query = ：'"黃能富" "農業"';
+  $query = ：'黃能富 農業';
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
   // echo $url . "\n";
 
