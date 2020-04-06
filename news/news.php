@@ -16,25 +16,6 @@ if ($now - $last > 86400) {
   $timestamp = fopen($timestampfile,"w+");
   fwrite($timestamp,$now);
   fclose($timestamp);
-  // echo "新檔案ok時間標已經換好了";
-
-//   if (!file_exists($datafile)) {
-//     echo "如果時間超過且檔案不在，就執行原有的//";
-//     exec("php parse_news.php");
-//   }
-//   else{
-//     exec("python3 news.py");
-//     echo "已啟用python建立新的data//";
-//
-//     $timestamp = fopen($timestampfile,"w+");
-//     fwrite($timestamp,$now);
-//     fclose($timestamp);
-//     echo "新檔案ok時間標已經換好了//";
-//   }
-// }
-// else {
-//   // 如果時間沒超過，就執行原有的
-//   exec("php parse_news.php");
 }
 
 else {

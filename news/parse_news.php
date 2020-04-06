@@ -37,11 +37,11 @@ function get_news(){
     $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}); // 先試試看News有沒有寫對
     $news_list[] = $incoming_news; // python的array.append()
   }
-  // 有點像print的功能 把結果印出來
+  // 把結果印出來
   $json_result = json_encode($news_list);
   echo $json_result;
 
-  // // 寫檔案
+  // 寫檔案
   $data = fopen("news_data.txt","w+");
   fwrite($data,$json_result);
   fclose($data);
