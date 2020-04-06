@@ -34,7 +34,7 @@ function renderNews_page() {
 
 
     var newsTd_date = document.createElement("td");
-    newsTd_date.innerHTML = links[i].date;
+    newsTd_date.innerHTML = links[i].day;
     newsTr.appendChild(newsTd_date);
 
     news_table.appendChild(newsTr);
@@ -62,7 +62,7 @@ function renderNews() {
 
 
     var newsdate = document.createElement("p");
-    newsdate.innerHTML = links[i].date;
+    newsdate.innerHTML = links[i].day;
     newsWrapper.appendChild(newsdate);
 
 
