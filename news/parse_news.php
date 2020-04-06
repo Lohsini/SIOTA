@@ -12,7 +12,7 @@ class News {
         $this->type = "新聞";
         $this->title = " ".$title;
         $this->href = $href;
-        $this->date = $date;
+        $this->date = time();
     }
 }
 
@@ -34,7 +34,7 @@ function get_news(){
   $news_list = [];
 
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
-    $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}, $res_json->{'items'}[$i]->{'snippet'}); // 先試試看News有沒有寫對
+    $incoming_news = new News($res_json->{'items'}[$i]->{'title'}, $res_json->{'items'}[$i]->{'link'}; 
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 把結果印出來
