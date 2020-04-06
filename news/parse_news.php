@@ -17,7 +17,7 @@ class News {
 }
 
 function get_news(){
-  $api = "https://www.googleapis.com/customsearch/v1";
+  $api = "https://www.googleapis.com/customsearch/v1/siterestrict";
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
   $query = "黃能富%20農業%20清華大學";
