@@ -5,14 +5,14 @@ class News {
     public $type;
     public $title;
     public $href;
-    public $day;
+    public $date;
 
     // constructor(一般都是叫這個名稱), 相當於python的__init__()
     function __construct($title, $href, $date) {
         $this->type = "新聞";
         $this->title = " ".$title;
         $this->href = $href;
-        $this->day = $date;
+        $this->date = $date;
     }
 }
 
