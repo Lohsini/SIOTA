@@ -41,9 +41,9 @@ function get_news(){
 
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
     $number = strpos($snippet,"...");
-    // $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
+    $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
 
-    $incoming_news = new News($new_title, $new_link, $number);
+    $incoming_news = new News($new_title, $new_link, $new_date);
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 把結果印出來
