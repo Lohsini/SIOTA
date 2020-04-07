@@ -24,7 +24,7 @@ function get_news(){
   // $query = "陳時中%20確診%20肺炎";
   $query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
-  echo $url . "\n";
+  // echo $url . "\n";
 
   // 這個相當於python的requests.get(url)
   $result = file_get_contents($url);
@@ -55,5 +55,4 @@ function get_news(){
   fwrite($data,$json_result);
   fclose($data);
 }
-get_news()
 ?>
