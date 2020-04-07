@@ -47,7 +47,7 @@ function get_news(){
     $news_list[] = $incoming_news; // python的array.append()
   }
 
-  sort($news_list);
+  // sort($news_list);
   // 把結果印出來
   $json_result = json_encode($news_list);
   echo $json_result;
