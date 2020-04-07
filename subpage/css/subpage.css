@@ -694,6 +694,9 @@ textarea {
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
 }
+.td_date{
+  text-align: center;
+}
 
 .news_area table tr:hover {
   background-color: #dee2e6;

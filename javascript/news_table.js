@@ -34,6 +34,7 @@ function renderNews_page() {
 
 
     var newsTd_date = document.createElement("td");
+    newsTd_date.setAttribute("class", "td_date");
     newsTd_date.innerHTML = links[i].date;
     newsTr.appendChild(newsTd_date);
 
