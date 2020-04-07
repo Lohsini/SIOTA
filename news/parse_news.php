@@ -36,7 +36,7 @@ function get_news(){
   $news_list = [];
 
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
-    $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}->{'og:title'};
+    $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}[0]->{'og:title'};
     $new_link = $res_json->{'items'}[$i]->{'link'};
 
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
