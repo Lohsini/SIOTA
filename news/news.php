@@ -10,7 +10,7 @@ $timestamp = fopen($timestampfile,"r+");
 $last = fread($timestamp,"100");
 fclose($timestamp);
 
-if ($now - $last > 86400) {
+if ($now - $last > 60) {
   get_news();
 
   $timestamp = fopen($timestampfile,"w+");
