@@ -46,6 +46,8 @@ function get_news(){
     $incoming_news = new News($new_title, $new_link, $new_date);
     $news_list[] = $incoming_news; // python的array.append()
   }
+
+  sort($news_list);
   // 把結果印出來
   $json_result = json_encode($news_list);
   echo $json_result;
