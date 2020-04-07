@@ -39,10 +39,10 @@ function get_news(){
     $new_link = $res_json->{'items'}[$i]->{'link'};
 
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
-    $number = strpos($snippet,"...");
-    $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
+    // $number = strpos($snippet,"...");
+    // $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
 
-    $incoming_news = new News($new_title, $new_link, $new_date);
+    $incoming_news = new News($new_title, $new_link, $snippet);
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 把結果印出來
