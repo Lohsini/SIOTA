@@ -16,39 +16,42 @@ class News {
     }
 }
 
-function get_news(){
-  $api = "https://www.googleapis.com/customsearch/v1/siterestrict";
-  $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
-  $searchId = "010230242516722102980:n0ssdaoccan";
-  // $query = "陳時中%20確診%20肺炎";
-  $query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
-  $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
-  // echo $url . "\n";
 
-  // 這個相當於python的requests.get(url)
-  $result = file_get_contents($url);
+$api = "https://www.googleapis.com/customsearch/v1/siterestrict";
+$key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
+$searchId = "010230242516722102980:n0ssdaoccan";
+// $query = "陳時中%20確診%20肺炎";
+$query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
+$url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
+echo $url . "\n";
 
-  // parse parse result
-  $res_json = json_decode($result);
+// 這個相當於python的requests.get(url)
+$result = file_get_contents($url);
 
-  // 初始化成空的array
-  $news_list = [];
+// parse parse result
+$res_json = json_decode($result);
 
-  for ($i=0; $i < count($res_json->{'items'}); $i++) {
-    $new_title = $res_json->{'items'}[$i]->{'title'};
-    $new_link = $res_json->{'items'}[$i]->{'link'};
-    $new_date = time();
+// 初始化成空的array
+$news_list = [];
 
-    $incoming_news = new News($new_title, $new_link ,$new_date);
-    $news_list[] = $incoming_news; // python的array.append()
-  }
-  // 把結果印出來
-  $json_result = json_encode($news_list);
-  // echo $json_result;
+for ($i=0; $i < count($res_json->{'items'}); $i++) {
+  $new_title = $res_json->{'items'}[$i]->{'title'};
+  $new_link = $res_json->{'items'}[$i]->{'link'};
+  $snippet= $res_json->{'items'}[$i]->{'snippet'};
+  $number = strpos($snippet,"...");
+  echo $number;
+  // $new_date = mb_substr($snippet, 0, $number-6, "utf-8");
 
-  // 寫檔案
-  $data = fopen("news_data.txt","w+");
-  fwrite($data,$json_result);
-  fclose($data);
+  $incoming_news = new News($new_title, $new_link, $number);
+  $news_list[] = $incoming_news; // python的array.append()
 }
+// 把結果印出來
+$json_result = json_encode($news_list);
+echo $json_result;
+
+// 寫檔案
+// $data = fopen("news_data.txt","w+");
+// fwrite($data,$json_result);
+// fclose($data);
+
 ?>
