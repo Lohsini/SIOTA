@@ -21,7 +21,7 @@ function get_news(){
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
   // $query = "陳時中%20確診%20肺炎";
-  $query = "黃能富%20農業%20清華大學%20科技";
+  $query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
   // echo $url . "\n";
 
