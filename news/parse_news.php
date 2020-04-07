@@ -47,12 +47,11 @@ function get_news(){
   }
   // 把結果印出來
   $json_result = json_encode($news_list);
-  echo $json_result;
+  // echo $json_result;
 
   // 寫檔案
   $data = fopen("news_data.txt","w+");
   fwrite($data,$json_result);
   fclose($data);
 }
-
 ?>

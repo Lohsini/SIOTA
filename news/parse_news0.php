@@ -8,11 +8,11 @@ class News {
     public $date;
 
     // constructor(一般都是叫這個名稱), 相當於python的__init__()
-    function __construct($title, $href) {
+    function __construct($title, $href, $date) {
         $this->type = "新聞";
         $this->title = " ".$title;
         $this->href = $href;
-        $this->date = time();
+        $this->date = $date;
     }
 }
 
@@ -37,8 +37,9 @@ function get_news(){
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
     $new_title = $res_json->{'items'}[$i]->{'title'};
     $new_link = $res_json->{'items'}[$i]->{'link'};
+    $new_date = time();
 
-    $incoming_news = new News($new_title, $new_link);
+    $incoming_news = new News($new_title, $new_link ,$new_date);
     $news_list[] = $incoming_news; // python的array.append()
   }
   // 把結果印出來
