@@ -2,17 +2,17 @@
 // define News structure
 class News {
     // property declaration
+    public $date;
     public $type;
     public $title;
     public $href;
-    public $date;
 
     // constructor(一般都是叫這個名稱), 相當於python的__init__()
     function __construct($date, $title, $href) {
-      $this->date = $date;
       $this->type = "新聞";
       $this->title = " ".$title;
       $this->href = $href;
+      $this->date = $date;
     }
 }
 
@@ -47,10 +47,10 @@ function get_news(){
     $news_list[] = $incoming_news; // python的array.append()
   }
 
-  // sort($news_list);
+  sort($news_list);
   // 把結果印出來
   $json_result = json_encode($news_list);
-  echo $json_result;
+  // echo $json_result;
 
   // 寫檔案
   $data = fopen("news_data.txt","w+");
