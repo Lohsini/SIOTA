@@ -21,8 +21,8 @@ function get_news(){
   $api = "https://www.googleapis.com/customsearch/v1/";
   $key = "AIzaSyDl7lKKeyRZLseiVKaz6Escr_vtcYTHFhs";
   $searchId = "010230242516722102980:n0ssdaoccan";
-  // $query = "陳時中%20確診%20肺炎";
-  $query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
+  $query = "陳時中%20確診%20肺炎";
+  // $query = "黃能富%20農業%20清華大學%20科技%20-質疑%20-利益勾結";
   $url = $api . "?key=" . $key . "&cx=" . $searchId . "&q=" . $query;
   // echo $url . "\n";
 
@@ -36,12 +36,13 @@ function get_news(){
   $news_list = [];
 
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
-    $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}[0]->{'og:title'};
-    $new_link = $res_json->{'items'}[$i]->{'link'};
-
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
     $number = strpos($snippet,"...");
     $new_date = substr($snippet, 0, $number-1);
+
+    $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}[0]->{'og:title'};
+    $new_link = $res_json->{'items'}[$i]->{'link'};
+
 
     $incoming_news = new News($new_date, $new_title, $new_link);
     $news_list[] = $incoming_news; // python的array.append()
