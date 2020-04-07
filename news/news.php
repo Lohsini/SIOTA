@@ -18,9 +18,7 @@ if ($now - $last > 60) {
   fclose($timestamp);
 }
 
-else {
-  $data = fopen($datafile, "r") or die("Unable to open file!");
-  echo fread($data,filesize($datafile));
-  fclose($data);
-}
+$data = fopen($datafile, "r") or die("Unable to open file!");
+echo fread($data,filesize($datafile));
+fclose($data);
 ?>
