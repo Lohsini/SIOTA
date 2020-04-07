@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-require("parse_news.php");
+require("parse_news0.php");
 
 $datafile = "news_data.txt";
 $timestampfile = "timestamp.txt";
