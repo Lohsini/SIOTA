@@ -38,10 +38,30 @@ function get_news(){
   for ($i=0; $i < count($res_json->{'items'}); $i++) {
     $snippet= $res_json->{'items'}[$i]->{'snippet'};
     $number = strpos($snippet,"...");
-    $new_date = substr($snippet, 0, $number-1);
+    $ugly_date = substr($snippet, 0, $number-1);
+
+    $year_index = strpos($ugly_date,"年");
+    $month_index = strpos($ugly_date,"月");
+    $day_index = strpos($ugly_date,"日");
+
+    $year = substr($ugly_date, 0, $year_index-0);
+    $month = substr($ugly_date, $year_index+3, $month_index-($year_index+3));
+    $day = substr($ugly_date, $month_index+3, $day_index-($month_index+3));
+    if ($month>9) {
+      if ($day>9) {
+        $new_date = $year."年" .$month."月" .$day."日";
+      } else{
+        $new_date = $year."年" .$month."月0" .$day."日";
+      }
+    } elseif ($day>9) {
+      $new_date = $year."年0" .$month."月" .$day."日";
+    } else{
+      $new_date = $year."年0" .$month."月0" .$day."日";
+    }
 
     $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}[0]->{'og:title'};
     $new_link = $res_json->{'items'}[$i]->{'link'};
+
 
 
     $incoming_news = new News($new_date, $new_title, $new_link);
