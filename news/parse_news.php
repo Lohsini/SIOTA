@@ -49,14 +49,14 @@ function get_news(){
     $day = substr($ugly_date, $month_index+3, $day_index-($month_index+3));
     if ($month>9) {
       if ($day>9) {
-        $new_date = $year."-" .$month."-" .$day."-";
+        $new_date = $year."-" .$month."-" .$day;
       } else{
-        $new_date = $year."-" .$month."-0" .$day."-";
+        $new_date = $year."-" .$month."-0" .$day;
       }
     } elseif ($day>9) {
-      $new_date = $year."-0" .$month."-" .$day."-";
+      $new_date = $year."-0" .$month."-" .$day;
     } else{
-      $new_date = $year."-0" .$month."-0" .$day."-";
+      $new_date = $year."-0" .$month."-0" .$day;
     }
 
     $new_title = $res_json->{'items'}[$i]->{'pagemap'}->{'metatags'}[0]->{'og:title'};
