@@ -37,3 +37,9 @@ function stoptimer(n) {
   clearInterval(timeid);
   timer();
 }
+
+function stoptimer_dot(n){
+  currentSlide(n);
+  clearInterval(timeid);
+  timer();
+}
