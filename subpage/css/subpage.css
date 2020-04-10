@@ -244,7 +244,7 @@ html, body {
 }
 
 .contentbox p {
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
   text-align: justify;
   text-indent: 2rem;
@@ -256,8 +256,6 @@ html, body {
   color: var(--word-color);
   padding: 20px;
 }
-
-
 
 /* subpage_topic*/
 .subpage_topic {
@@ -311,16 +309,23 @@ html, body {
   flex-direction: row-reverse;
 }
 
+.research_field .container .text {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
 .research_field .container p {
   padding: 0 20px;
 }
 
 .fourthpart_title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .research_field_li {
-  margin: 0 0 0 20%;
+  margin: 0 0 0 10%;
+  text-align: justify;
 }
 
 #p_center {
@@ -375,7 +380,7 @@ html, body {
 .picture_card_full {
   display: block;
   margin: auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .research_member .picture_card {
@@ -694,7 +699,8 @@ textarea {
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
 }
-.td_date{
+
+.td_date {
   text-align: center;
 }
 
@@ -906,6 +912,13 @@ textarea {
   .research_field .container {
     padding-bottom: 20px;
   }
+
+  .research_field .container .text_2and3 {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
