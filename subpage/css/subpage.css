@@ -419,7 +419,7 @@ html, body {
   transition: transform 0.3s;
 }
 
-.member_card:hover img{
+.member_card:hover img {
   transform: translateY(-20px);
 }
 
@@ -555,6 +555,10 @@ html, body {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.strategy_area label:hover {
+  background-color: var(--hover-color);
+}
+
 .strategy_number {
   flex-grow: 1;
 }
@@ -591,7 +595,7 @@ html, body {
 
 .color_background {
   background-color: var(--text-bg-color);
-  padding: 10px;
+  padding: 30px 50px;
   width: 80%;
   margin: auto;
   border-radius: 5px;
@@ -924,7 +928,6 @@ textarea {
     margin: auto;
     text-align: justify;
   }
-
 }
 
 @media screen and (max-width: 600px) {
