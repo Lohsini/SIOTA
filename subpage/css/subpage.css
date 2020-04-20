@@ -415,6 +415,12 @@ html, body {
   border-radius: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   object-fit: cover;
+  transform: translateY(0px);
+  transition: transform 0.3s;
+}
+
+.member_card:hover img{
+  transform: translateY(-20px);
 }
 
 .guest {
